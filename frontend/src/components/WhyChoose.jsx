@@ -7,6 +7,7 @@ import {
     Ship,
 } from "lucide-react";
 import { Chapter, Reveal } from "./Reveal";
+import { Tilt } from "./Tilt";
 
 const REASONS = [
     {
@@ -65,10 +66,11 @@ export const WhyChoose = () => (
             <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {REASONS.map((r, i) => (
                     <Reveal key={r.title} delay={(i % 3) * 0.1}>
-                        <div
-                            data-testid={`why-card-${i + 1}`}
-                            className="group h-full rounded-md border border-[#0F172A]/8 bg-white p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#166534]/30 hover:shadow-[0_20px_40px_rgb(0,0,0,0.07)]"
-                        >
+                        <Tilt className="h-full" max={5}>
+                            <div
+                                data-testid={`why-card-${i + 1}`}
+                                className="group h-full rounded-md border border-[#0F172A]/8 bg-white p-8 transition-shadow duration-300 hover:shadow-[0_20px_40px_rgb(0,0,0,0.07)]"
+                            >
                             <div className="flex items-start justify-between">
                                 <span className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-[#166534]/8 text-[#166534] transition-colors duration-300 group-hover:bg-[#166534] group-hover:text-white">
                                     <r.icon size={20} aria-hidden="true" />
@@ -83,7 +85,8 @@ export const WhyChoose = () => (
                             <p className="mt-2.5 text-sm leading-relaxed text-[#475569]">
                                 {r.text}
                             </p>
-                        </div>
+                            </div>
+                        </Tilt>
                     </Reveal>
                 ))}
             </div>

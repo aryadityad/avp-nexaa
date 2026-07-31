@@ -27,14 +27,16 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 ## Implemented
 - 2026-07-31: Full single-page site live — all sections above, Lenis momentum scroll, scroll reveals, counters, editorial marquee, Google Translate widget (dropdown verified rendering 5 languages), mobile menu, map embed, QR strip, form prefills mailto to info@avpnexaa.com. Logo/QR asset mapping corrected after upload.
+- 2026-07-31: Google Translate expanded to 35 major languages (IN, EU, Middle East, East & SE Asia, Africa). 3D layer added: WebGL golden/green particle field in hero reacting to mouse (react-three-fiber), cursor-follow gold glow, magnetic hero CTA, 3D tilt on product + Why Choose Us cards (all disabled under prefers-reduced-motion / no WebGL). Footer QR codes are now clickable links (WhatsApp → wa.me/919112374325; Instagram/Facebook → placeholder handles instagram.com/avpnexaa, facebook.com/avpnexaa — client to supply real profile URLs).
 
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Product detail pages/sections with real specs (moisture %, mesh size, packaging, MOQ)
-- P1: Swap placeholders — final product photography, certification badge files, testimonials
+- P1: Swap placeholders — final product photography, certification badge files, testimonials, real Instagram/Facebook profile URLs for QR links
 - P1: Verify QR code labels (two plain QRs labeled Instagram/Facebook by upload order — client to confirm)
 - P2: Testimonials section, blog/insights, multi-page routing with page transitions
 - P2: Analytics events on CTAs, downloadable product catalog PDF
+- P2: OG share image, schema.org Organization + Product structured data, sitemap
 
 ## Next Tasks
 1. Connect form to Resend + save enquiries to Mongo (needs no key — managed integration)

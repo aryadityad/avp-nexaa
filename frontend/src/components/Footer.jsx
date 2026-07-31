@@ -2,9 +2,21 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { CONTACT, NAV_LINKS, PRODUCTS, scrollToId } from "../data/content";
 
 const QRS = [
-    { src: "/assets/qr-1.png", label: "Scan for Instagram" },
-    { src: "/assets/qr-whatsapp.png", label: "Scan for WhatsApp" },
-    { src: "/assets/qr-2.png", label: "Scan for Facebook" },
+    {
+        src: "/assets/qr-1.png",
+        label: "Scan for Instagram",
+        href: "https://instagram.com/avpnexaa",
+    },
+    {
+        src: "/assets/qr-whatsapp.png",
+        label: "Scan for WhatsApp",
+        href: CONTACT.whatsapp,
+    },
+    {
+        src: "/assets/qr-2.png",
+        label: "Scan for Facebook",
+        href: "https://facebook.com/avpnexaa",
+    },
 ];
 
 const SOCIALS = [
@@ -92,19 +104,27 @@ export const Footer = () => (
                     </h4>
                     <div className="mt-4 flex gap-4">
                         {QRS.map((q) => (
-                            <div key={q.label} className="text-center" data-testid={`qr-${q.label.toLowerCase().replace(/\s+/g, "-")}`}>
+                            <a
+                                key={q.label}
+                                href={q.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group block text-center"
+                                data-testid={`qr-${q.label.toLowerCase().replace(/\s+/g, "-")}`}
+                                aria-label={`${q.label} — opens in a new tab`}
+                            >
                                 <img
                                     src={q.src}
                                     alt={q.label}
                                     width="80"
                                     height="80"
                                     loading="lazy"
-                                    className="h-20 w-20 rounded-md bg-white p-1"
+                                    className="h-20 w-20 rounded-md bg-white p-1 transition-transform duration-300 group-hover:scale-110"
                                 />
-                                <p className="mt-2 max-w-[80px] text-[10px] leading-tight text-white/50">
+                                <p className="mx-auto mt-2 max-w-[80px] text-[10px] leading-tight text-white/50 transition-colors duration-300 group-hover:text-[#D4AF37]">
                                     {q.label}
                                 </p>
-                            </div>
+                            </a>
                         ))}
                     </div>
                     <p className="mt-5 text-sm leading-relaxed text-white/55">{CONTACT.email}</p>

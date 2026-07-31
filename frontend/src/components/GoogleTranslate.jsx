@@ -8,7 +8,8 @@ export const GoogleTranslate = ({ light = false }) => {
             new window.google.translate.TranslateElement(
                 {
                     pageLanguage: "en",
-                    includedLanguages: "en,ar,fr,es,zh-CN",
+                    includedLanguages:
+                        "en,ar,fr,es,pt,de,it,nl,ru,zh-CN,zh-TW,ja,ko,hi,bn,ta,te,mr,gu,kn,ml,pa,ur,th,vi,id,ms,tr,fa,sw,pl,uk,el,he",
                     layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
                     autoDisplay: false,
                 },

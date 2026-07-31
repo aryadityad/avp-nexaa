@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { scrollToId } from "../data/content";
+import { HeroParticles } from "./HeroParticles";
+import { Magnetic } from "./Magnetic";
 
 const HERO_IMG =
     "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=2000&q=80";
@@ -28,11 +30,18 @@ export const Hero = () => {
     });
     const y = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
 
+    const onMouseMove = (e) => {
+        const r = e.currentTarget.getBoundingClientRect();
+        e.currentTarget.style.setProperty("--mx", `${e.clientX - r.left}px`);
+        e.currentTarget.style.setProperty("--my", `${e.clientY - r.top}px`);
+    };
+
     return (
         <section
             id="home"
             ref={ref}
             data-testid="hero-section"
+            onMouseMove={onMouseMove}
             className="relative flex min-h-screen items-end overflow-hidden"
         >
             <motion.div className="absolute inset-0" style={reduce ? {} : { y }}>
@@ -52,6 +61,14 @@ export const Hero = () => {
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#0B131F]/90 via-[#0B131F]/45 to-[#0B131F]/30" />
             <div className="absolute inset-0 bg-[#166534]/10 mix-blend-multiply" />
+            <div
+                className="pointer-events-none absolute inset-0 z-[5]"
+                style={{
+                    background:
+                        "radial-gradient(560px circle at var(--mx, 50%) var(--my, 55%), rgba(212,175,55,0.14), transparent 65%)",
+                }}
+            />
+            <HeroParticles />
 
             <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-28 pt-40 md:px-10">
                 <motion.p
@@ -90,18 +107,20 @@ export const Hero = () => {
                     transition={{ duration: 0.7, ease: "easeOut", delay: 0.95 }}
                     className="mt-10 flex flex-wrap items-center gap-4"
                 >
-                    <button
-                        onClick={() => scrollToId("contact")}
-                        data-testid="hero-cta-quote"
-                        className="group flex items-center gap-2 rounded-full bg-[#D4AF37] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#0B131F] transition-all duration-300 hover:scale-[1.04] hover:bg-[#e9c96a]"
-                    >
-                        Get a Quote
-                        <ArrowRight
-                            size={16}
-                            className="transition-transform duration-300 group-hover:translate-x-1"
-                            aria-hidden="true"
-                        />
-                    </button>
+                    <Magnetic>
+                        <button
+                            onClick={() => scrollToId("contact")}
+                            data-testid="hero-cta-quote"
+                            className="group flex items-center gap-2 rounded-full bg-[#D4AF37] px-8 py-4 text-sm font-semibold uppercase tracking-wider text-[#0B131F] transition-colors duration-300 hover:bg-[#e9c96a]"
+                        >
+                            Get a Quote
+                            <ArrowRight
+                                size={16}
+                                className="transition-transform duration-300 group-hover:translate-x-1"
+                                aria-hidden="true"
+                            />
+                        </button>
+                    </Magnetic>
                     <button
                         onClick={() => scrollToId("products")}
                         data-testid="hero-cta-products"

@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { PRODUCTS } from "../data/content";
 import { Chapter, Reveal } from "./Reveal";
+import { Tilt } from "./Tilt";
 
 export const Products = () => (
     <section id="products" data-testid="products-section" className="noise relative py-24 md:py-32">
@@ -23,10 +24,11 @@ export const Products = () => (
             <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 {PRODUCTS.map((p, i) => (
                     <Reveal key={p.slug} delay={(i % 4) * 0.08}>
-                        <article
-                            data-testid={`product-card-${p.slug}`}
-                            className="group h-full overflow-hidden rounded-md border border-[#0F172A]/8 bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_48px_rgb(0,0,0,0.10)]"
-                        >
+                        <Tilt className="h-full">
+                            <article
+                                data-testid={`product-card-${p.slug}`}
+                                className="group h-full overflow-hidden rounded-md border border-[#0F172A]/8 bg-white transition-shadow duration-300 hover:shadow-[0_28px_56px_rgb(0,0,0,0.14)]"
+                            >
                             <div className="relative aspect-[4/5] overflow-hidden">
                                 <img
                                     src={p.image}
@@ -59,7 +61,8 @@ export const Products = () => (
                                     />
                                 </button>
                             </div>
-                        </article>
+                            </article>
+                        </Tilt>
                     </Reveal>
                 ))}
             </div>
