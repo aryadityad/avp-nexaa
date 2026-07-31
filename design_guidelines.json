@@ -1,0 +1,93 @@
+{
+  "theme": "light",
+  "design_philosophy": "Premium corporate B2B exporter layout combining organic warmth with authoritative Swiss/Awwwards typography. Focus on trust, large typography, expansive negative space, and editorial layouts. The aesthetic must feel like a high-end commodities exporter—immaculate, credible, and global. Color choices bridge the requested agri-green and gold with deep navy text to naturally integrate the client's blue logo.",
+  "colors": {
+    "background": "#F8FAF9",
+    "surface": "#FFFFFF",
+    "text_primary": "#0F172A",
+    "text_secondary": "#475569",
+    "accent_primary": "#166534",
+    "accent_gold": "#D4AF37",
+    "border_subtle": "rgba(15, 23, 42, 0.08)",
+    "footer_bg": "#0B131F"
+  },
+  "typography": {
+    "heading_font": "Playfair Display",
+    "body_font": "Outfit",
+    "rules": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl font-light tracking-tighter text-[#0F172A] leading-tight",
+      "h2": "text-4xl sm:text-5xl font-normal tracking-tight text-[#0F172A]",
+      "h3": "text-2xl sm:text-3xl font-medium tracking-tight",
+      "body": "text-base lg:text-lg text-[#475569] leading-relaxed",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-[#166534]"
+    }
+  },
+  "spacing_and_layout": {
+    "global_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32",
+    "grid_system": "Bento-style layouts for feature cards. Strict 12-column grid for standard sections. Use p-8 to p-12 for inner card padding.",
+    "border_radius": "rounded-none or max rounded-md (2px-6px) for an architectural, corporate feel. No pill-shaped elements except primary CTA buttons."
+  },
+  "visual_enhancers": {
+    "header_glass": "backdrop-blur-xl bg-white/80 border-b border-[#0F172A]/5 backdrop-saturate-150 transition-all duration-300",
+    "hero_overlay": "bg-black/30 (keeps the image breathing while allowing contrast for white text)",
+    "shadows": {
+      "ambient": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "hover": "hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)]"
+    },
+    "textures": "Subtle noise overlay (opacity-5) over solid background sections to kill digital flatness."
+  },
+  "motion": {
+    "scrolling": "Lenis smooth scroll (MANDATORY). Standard browser scrolling is forbidden.",
+    "hero_reveal": "Masked line-by-line stagger text reveal (using framer-motion). Background slow Ken Burns zoom (scale-110 to scale-100 over 15s).",
+    "scroll_triggers": "Fade up with slight translateY (y: 40, opacity: 0 -> 1) over 700ms with easeOut.",
+    "hover_states": "Product cards lift (-translate-y-2). Images inside clip/scale up slightly (scale-105). Buttons smoothly shift color and scale (scale-105).",
+    "marquees": "Slow, organic editorial drift for the certifications/tagline using react-fast-marquee."
+  },
+  "media": {
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1561602535-7f155201c950?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxhZ3JpY3VsdHVyYWwlMjBmYXJtJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc4NTUyMjQyOXww&ixlib=rb-4.1.0&q=85",
+        "description": "Premium sweeping view of green agricultural farm. Represents origin and growth."
+      },
+      "global_reach": {
+        "url": "https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxzaGlwcGluZyUyMGNhcmdvJTIwZ2xvYmFsfGVufDB8fHx8MTc4NTUyMjQyOXww&ixlib=rb-4.1.0&q=85",
+        "description": "Aerial view of cargo ship for global export context."
+      },
+      "product_moringa": {
+        "url": "https://images.unsplash.com/photo-1781377012601-93162be3a433?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxzcGljZSUyMHBvd2RlciUyMG9yZ2FuaWN8ZW58MHx8fHwxNzg1NTIyNDI5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Green powder in a wooden bowl for Moringa / Green herbs."
+      },
+      "product_turmeric": {
+        "url": "https://images.unsplash.com/photo-1594813593996-7f0d9868ce8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxzcGljZSUyMHBvd2RlciUyMG9yZ2FuaWN8ZW58MHx8fHwxNzg1NTIyNDI5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Golden/brown powder in glass container for Turmeric."
+      },
+      "product_amla": {
+        "url": "https://images.unsplash.com/photo-1781377012601-93162be3a433?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxzcGljZSUyMHBvd2RlciUyMG9yZ2FuaWN8ZW58MHx8fHwxNzg1NTIyNDI5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Green powder reused with different framing/zoom for Amla."
+      },
+      "product_chilli": {
+        "url": "https://images.unsplash.com/photo-1594813592990-2449cd47da8b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHxzcGljZSUyMHBvd2RlciUyMG9yZ2FuaWN8ZW58MHx8fHwxNzg1NTIyNDI5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Warm spiced powder in glass jar for Chilli powder."
+      }
+    }
+  },
+  "sections_and_components": {
+    "header": "Sticky with backdrop-blur. Shrink on scroll logic (e.g., py-6 shrinks to py-3). Left: Logo. Center/Right: Links, minimalist Google Translate language switcher. WhatsApp floating button fixed bottom-right.",
+    "hero": "100vh height. Background image covered with bg-black/30. H1 'Connecting Local Harvests to Global Markets'. Subhead. CTA 'Get a Quote' with smooth scroll anchor to contact.",
+    "about": "Mission & Vision cards. Asymmetrical layout. High contrast text.",
+    "why_choose_us": "6 cards with Lucide icons (quality, sourcing, qc, pricing, packaging, delivery). Grid: 1 col mobile, 2 col tablet, 3 col desktop. Soft ambient shadow, 1px subtle borders.",
+    "products": "4 spotlight cards. Hovering image scales, card lifts. Add 'Coming soon' minimal badge/text. Elegant serif titles.",
+    "certifications": "A slow marquee (react-fast-marquee) showcasing text/placeholders: FSSAI • APEDA • IEC • GST • MSME • ISO. Separated by gold dot or leaf icon.",
+    "global_reach": "Parallax section with cargo ship image. Overlay animated stat counters (e.g., 'Countries Served', 'Tons Exported') triggered by IntersectionObserver or Framer Motion whileInView.",
+    "contact": "Deep navy (#0B131F) background. Contact form (use Shadcn Input/Select/Textarea). Fields: Full Name, Email, Country (dropdown), Phone, Company, Message. Google map placeholder adjacent.",
+    "footer": "Navy background. Contains the 'Scan & Connect' strip with 3 grey placeholder squares for QRs (Instagram, WhatsApp, Facebook). Links, copyright, and logo."
+  },
+  "component_instructions_to_main_agent": {
+    "icons": "Use 'lucide-react' for all icon needs.",
+    "forms": "Use highly customized Shadcn components for inputs. Remove default blue focus rings, replace with gold/green focus rings.",
+    "typography": "Do NOT use default Inter for headings. Include Google Fonts 'Playfair Display' and 'Outfit' in index.html or import in CSS.",
+    "animations": "Use framer-motion for line reveals and scroll fades. Respect prefers-reduced-motion via standard framer-motion hooks if necessary."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": "Never use pure transparent backgrounds for headers (use glassmorphism). Do not center-align paragraphs; maintain structural, editorial alignment (left-aligned text blocks). All interactive elements must have a distinct hover state and include data-testid. Build everything in functional React components. Do NOT add dummy characters/emojis for icons. Execute with precision, avoiding the 'generic Vercel' look by leaning into the defined custom typography and spacing."
+}
