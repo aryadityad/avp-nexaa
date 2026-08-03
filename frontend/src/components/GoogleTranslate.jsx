@@ -49,7 +49,7 @@ export const GoogleTranslate = () => {
             data-testid="language-switcher"
         >
             <span className="text-sm font-medium">{LANG_NAMES[lang] || "English"}</span>
-            <Globe size={15} strokeWidth={2} className="text-[#166534]" aria-hidden="true" />
+            <Globe size={15} strokeWidth={2} className="text-[#0CA56F]" aria-hidden="true" />
             <div id="google-translate-element" />
         </div>
     );

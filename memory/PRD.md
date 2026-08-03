@@ -42,6 +42,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-03 (revision 3): Blue (original) logo mark restored in header/footer/marquee/favicon, nexaa wordmark tinted blue. Fixed clipped "g" descender in hero (MaskedLine padding). Ticker item now "Organic Dehydrated Products". Products H2 → "Perfect for export.", category line/count removed, bigger card descriptions. Why Organic: comma copy, larger section/typography. Why Choose Us cards now use bullet lists. Root-caused "black leaves" bug: Tailwind /6, /8, /12 opacity modifiers don't compile (fell back to navy) — normalized to /5, /10, /15 across 7 files.
 
+- 2026-08-03 (final logo + rebrand pass): Final client logo (mark + AVP nexaa + tagline) displayed in full in header (taller bar) and footer (white chip); trimmed logo-full.png + green mark re-cropped for favicon/marquee chips. All blue removed from header — accents now logo green #0CA56F (= Baker Hughes #02A783 family). Entire site switched to Hanken Grotesk (closest free match to Baker Hughes' proprietary NexusSans) for both body and headings.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)
