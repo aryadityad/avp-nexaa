@@ -32,6 +32,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-03 (client revision 2): Logo lockup redone Baker Hughes-style — mark + "AVP nexaa" wordmark with "Collaborate. Connect. Grow." tagline visible beneath in green (header) / gold (footer). Language selector rebuilt as a labeled pill — shows active language name (read from googtrans cookie) + globe icon, invisible overlay gadget keeps native menu working (verified menu opens with all 35 languages).
 
+- 2026-08-03 (link preview): Branded 1200×630 OG share image composed from hero art + logo (public/assets/og-image.jpg); Open Graph + Twitter Card meta tags wired in index.html using %REACT_APP_BACKEND_URL% so the image URL is absolute. Verified tags served and image returns 200.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)
