@@ -1,11 +1,11 @@
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import { CONTACT, NAV_LINKS, PRODUCTS, scrollToId } from "../data/content";
 
 const QRS = [
     {
-        src: "/assets/qr-1.png",
+        src: "/assets/qr-instagram.png",
         label: "Scan for Instagram",
-        href: "https://instagram.com/avpnexaa",
+        href: "https://www.instagram.com/avpnexaa",
     },
     {
         src: "/assets/qr-whatsapp.png",
@@ -13,16 +13,19 @@ const QRS = [
         href: CONTACT.whatsapp,
     },
     {
-        src: "/assets/qr-2.png",
+        src: "/assets/qr-facebook.png",
         label: "Scan for Facebook",
-        href: "https://facebook.com/avpnexaa",
+        href: "https://www.facebook.com/profile.php?id=61591269235999",
     },
 ];
 
 const SOCIALS = [
-    { icon: Instagram, label: "Instagram", href: "#" },
-    { icon: Facebook, label: "Facebook", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/avpnexaa" },
+    {
+        icon: Facebook,
+        label: "Facebook",
+        href: "https://www.facebook.com/profile.php?id=61591269235999",
+    },
 ];
 
 export const Footer = () => (
@@ -31,14 +34,23 @@ export const Footer = () => (
             <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
                 <div>
                     <div className="flex items-center gap-3">
-                        <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-black/5">
-                            <img src="/assets/logo.png" alt="AVP Nexaa logo" className="h-9 w-9 object-contain" />
+                        <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-md bg-white p-1 ring-1 ring-black/5">
+                            <img
+                                src="/assets/logo-mark.png"
+                                alt="AVP Nexaa logo mark"
+                                className="h-full w-auto object-contain"
+                            />
                         </span>
-                        <span className="font-display text-lg font-semibold tracking-wide text-white">
-                            AVP <span className="italic text-[#D4AF37]">Nexaa</span>
+                        <span className="flex flex-col leading-none">
+                            <span className="text-xl font-bold tracking-wide text-white">
+                                AVP
+                            </span>
+                            <span className="text-[11px] font-semibold tracking-[0.42em] text-[#D4AF37]">
+                                nexaa
+                            </span>
                         </span>
                     </div>
-                    <p className="font-display mt-4 text-sm italic text-[#D4AF37]">
+                    <p className="font-display mt-4 text-sm text-[#D4AF37]">
                         Collaborate. Connect. Grow.
                     </p>
                     <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/55">
@@ -50,6 +62,8 @@ export const Footer = () => (
                             <a
                                 key={s.label}
                                 href={s.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 aria-label={`AVP Nexaa on ${s.label}`}
                                 data-testid={`social-${s.label.toLowerCase()}`}
                                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-all duration-300 hover:border-[#D4AF37] hover:text-[#D4AF37]"

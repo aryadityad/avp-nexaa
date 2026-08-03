@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Mail, MapPin, MessageCircle, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
 import { CONTACT, COUNTRIES } from "../data/content";
-import { Chapter, Reveal } from "./Reveal";
+import { Chapter, Reveal, SplitChars } from "./Reveal";
 
 const inputCls =
     "w-full rounded-md border border-[#0F172A]/12 bg-[#F8FAF9] px-4 py-3 text-sm text-[#0F172A] placeholder-[#475569]/50 transition-all duration-200 focus:border-[#166534] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/40";
@@ -57,10 +57,10 @@ export const Contact = () => {
                         <Reveal>
                             <Chapter number="06" label="Contact & Enquiry" light />
                             <h2 className="font-display text-4xl font-medium leading-tight tracking-tight text-white sm:text-5xl">
-                                Let's talk
-                                <em className="italic text-[#D4AF37]"> exports.</em>
+                                <SplitChars text="Let's talk" />{" "}
+                                <SplitChars text="exports." className="text-[#D4AF37]" />
                             </h2>
-                            <p className="mt-6 max-w-md text-base leading-relaxed text-white/65">
+                            <p className="mt-6 max-w-md text-base leading-relaxed text-white/80">
                                 Share your product requirements, target volumes and
                                 destination market — our export desk will respond with
                                 specifications and pricing within 24 hours.
@@ -119,7 +119,7 @@ export const Contact = () => {
                             <h3 className="font-display text-2xl font-medium text-[#0F172A]">
                                 Send an Enquiry
                             </h3>
-                            <p className="mt-1.5 text-sm text-[#475569]">
+                            <p className="mt-1.5 text-sm text-[#334155]">
                                 Fields marked * are required.
                             </p>
                             <div className="mt-7 grid gap-5 sm:grid-cols-2">

@@ -1,19 +1,27 @@
+import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { PRODUCTS } from "../data/content";
-import { Chapter, Reveal } from "./Reveal";
+import { PRODUCT_CATEGORIES } from "../data/content";
+import { Chapter, Reveal, SplitChars } from "./Reveal";
 import { Tilt } from "./Tilt";
+import { FloatingLeaves } from "./FloatingLeaves";
 
 export const Products = () => (
-    <section id="products" data-testid="products-section" className="noise relative py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-6 md:px-10">
+    <section id="products" data-testid="products-section" className="noise relative overflow-hidden py-24 md:py-32">
+        <FloatingLeaves
+            items={[
+                { top: "5%", left: "45%", size: 46, rotate: 10, duration: 8, className: "text-[#166534]/8" },
+                { bottom: "8%", right: "2%", size: 52, rotate: -25, duration: 7, delay: 1.5, className: "text-[#166534]/10" },
+            ]}
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
             <Reveal>
                 <Chapter number="03" label="Our Products" />
                 <div className="flex flex-wrap items-end justify-between gap-6">
                     <h2 className="font-display max-w-2xl text-4xl font-medium leading-tight tracking-tight text-[#0F172A] sm:text-5xl">
-                        Dehydrated at source,
-                        <em className="italic text-[#166534]"> perfected for export.</em>
+                        <SplitChars text="Dehydrated at source," />{" "}
+                        <SplitChars text="perfected for export." className="text-[#166534]" />
                     </h2>
-                    <p className="max-w-md text-base leading-relaxed text-[#475569]">
+                    <p className="max-w-md text-base leading-relaxed text-[#334155]">
                         Our flagship range of organic powders — processed under strict
                         hygiene protocols and packed to international food-safety
                         standards.
@@ -21,10 +29,23 @@ export const Products = () => (
                 </div>
             </Reveal>
 
-            <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {PRODUCTS.map((p, i) => (
-                    <Reveal key={p.slug} delay={(i % 4) * 0.08}>
-                        <Tilt className="h-full">
+            {PRODUCT_CATEGORIES.map((cat) => (
+                <div key={cat.slug} className="mt-14">
+                    <Reveal>
+                        <div className="mb-8 flex items-center gap-4">
+                            <h3 className="font-display text-2xl font-medium text-[#0F172A]">
+                                {cat.name}
+                            </h3>
+                            <span className="h-px flex-1 bg-[#0F172A]/10" />
+                            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#166534]">
+                                {cat.products.length} products
+                            </span>
+                        </div>
+                    </Reveal>
+                    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        {cat.products.map((p, i) => (
+                            <Reveal key={p.slug} delay={(i % 4) * 0.08}>
+                                <Tilt className="h-full">
                             <article
                                 data-testid={`product-card-${p.slug}`}
                                 className="group h-full overflow-hidden rounded-md border border-[#0F172A]/8 bg-white transition-shadow duration-300 hover:shadow-[0_28px_56px_rgb(0,0,0,0.14)]"
@@ -45,27 +66,30 @@ export const Products = () => (
                                 <h3 className="font-display text-xl font-medium text-[#0F172A]">
                                     {p.name}
                                 </h3>
-                                <p className="mt-2 text-sm leading-relaxed text-[#475569]">
+                                <p className="mt-2 text-sm leading-relaxed text-[#334155]">
                                     {p.description}
                                 </p>
-                                <button
+                                <Link
+                                    to={`/products/${p.slug}`}
                                     data-testid={`product-link-${p.slug}`}
                                     className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#166534] transition-colors duration-300 hover:text-[#D4AF37]"
-                                    aria-label={`${p.name} specifications — coming soon`}
+                                    aria-label={`View ${p.name} details and specifications`}
                                 >
-                                    Moisture, mesh size, MOQ — coming soon
+                                    View details &amp; specifications
                                     <ArrowUpRight
                                         size={14}
                                         className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                                         aria-hidden="true"
                                     />
-                                </button>
+                                </Link>
                             </div>
                             </article>
-                        </Tilt>
-                    </Reveal>
-                ))}
-            </div>
+                                </Tilt>
+                            </Reveal>
+                        ))}
+                    </div>
+                </div>
+            ))}
         </div>
     </section>
 );

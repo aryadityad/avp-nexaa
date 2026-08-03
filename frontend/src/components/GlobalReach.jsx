@@ -1,17 +1,19 @@
 import { useRef } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
-import { Globe2, ShieldCheck, Sprout } from "lucide-react";
-import { Counter } from "./Counter";
-import { Chapter, Reveal } from "./Reveal";
+import { BadgeCheck, Globe2, ShieldCheck, Sprout } from "lucide-react";
+import { SERVED_COUNTRIES } from "../data/content";
+import { Chapter, Reveal, SplitChars } from "./Reveal";
 
 const CARGO_IMG =
     "https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?auto=format&fit=crop&w=2000&q=80";
 
-const STATS = [
-    { value: 15, suffix: "+", label: "Countries Served" },
-    { value: 500, suffix: "+", label: "Tons Exported Annually" },
-    { value: 120, suffix: "+", label: "B2B Partners Worldwide" },
-    { value: 100, suffix: "%", label: "Export Compliance" },
+const CREDENTIALS = [
+    "FSSAI Licensed",
+    "APEDA Registered",
+    "IEC Certified",
+    "GST Registered",
+    "MSME Registered",
+    "ISO Standards",
 ];
 
 const PILLARS = [
@@ -72,8 +74,8 @@ export const GlobalReach = () => {
                 <Reveal>
                     <Chapter number="05" label="Global Reach — Why India" light />
                     <h2 className="font-display max-w-3xl text-4xl font-medium leading-tight tracking-tight text-white sm:text-5xl">
-                        From Indian fields to
-                        <em className="italic text-[#D4AF37]"> global ports.</em>
+                        <SplitChars text="From Indian fields to" />{" "}
+                        <SplitChars text="global ports." className="text-[#D4AF37]" />
                     </h2>
                 </Reveal>
 
@@ -88,7 +90,7 @@ export const GlobalReach = () => {
                                 <h3 className="font-display mt-5 text-xl font-medium text-white">
                                     {p.title}
                                 </h3>
-                                <p className="mt-2.5 text-sm leading-relaxed text-white/70">
+                                <p className="mt-2.5 text-sm leading-relaxed text-white/85">
                                     {p.text}
                                 </p>
                             </div>
@@ -96,17 +98,53 @@ export const GlobalReach = () => {
                     ))}
                 </div>
 
-                <div className="mt-16 grid grid-cols-2 gap-y-10 border-t border-white/12 pt-12 lg:grid-cols-4">
-                    {STATS.map((s) => (
-                        <div key={s.label} data-testid={`stat-${s.label.toLowerCase().replace(/\s+/g, "-")}`}>
-                            <p className="font-display text-4xl font-medium text-white md:text-5xl">
-                                <Counter value={s.value} suffix={s.suffix} />
-                            </p>
-                            <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/55">
-                                {s.label}
-                            </p>
-                        </div>
+                <div className="mt-16 grid grid-cols-2 gap-4 border-t border-white/12 pt-12 sm:grid-cols-3 lg:grid-cols-6">
+                    {CREDENTIALS.map((c, i) => (
+                        <Reveal key={c} delay={i * 0.06}>
+                            <div
+                                data-testid={`credential-${c.toLowerCase().replace(/\s+/g, "-")}`}
+                                className="flex items-center gap-3"
+                            >
+                                <BadgeCheck
+                                    size={18}
+                                    className="shrink-0 text-[#D4AF37]"
+                                    aria-hidden="true"
+                                />
+                                <span className="text-xs font-semibold uppercase tracking-[0.14em] text-white/75">
+                                    {c}
+                                </span>
+                            </div>
+                        </Reveal>
                     ))}
+                </div>
+
+                <div className="mt-16">
+                    <Reveal>
+                        <h3 className="font-display text-2xl font-medium text-white md:text-3xl">
+                            Countries We Serve
+                        </h3>
+                    </Reveal>
+                    <div className="mt-7 flex flex-wrap gap-3">
+                        {SERVED_COUNTRIES.map((c, i) => (
+                            <Reveal key={c.code} delay={i * 0.04}>
+                                <div
+                                    data-testid={`country-${c.code}`}
+                                    className="flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] px-4 py-2 backdrop-blur-sm transition-colors duration-300 hover:border-[#D4AF37]/50"
+                                >
+                                    <img
+                                        src={`https://flagcdn.com/w40/${c.code}.png`}
+                                        srcSet={`https://flagcdn.com/w80/${c.code}.png 2x`}
+                                        alt={`${c.name} flag`}
+                                        loading="lazy"
+                                        className="h-4 w-6 rounded-[2px] object-cover"
+                                    />
+                                    <span className="text-sm font-medium text-white/85">
+                                        {c.name}
+                                    </span>
+                                </div>
+                            </Reveal>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

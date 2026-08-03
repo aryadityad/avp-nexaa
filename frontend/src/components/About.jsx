@@ -1,8 +1,9 @@
-import { Eye, MapPin, Target } from "lucide-react";
-import { Chapter, Reveal } from "./Reveal";
+import { Eye, Target } from "lucide-react";
+import { Chapter, Reveal, SplitChars } from "./Reveal";
+import { FloatingLeaves } from "./FloatingLeaves";
 
 const ABOUT_IMG =
-    "https://images.unsplash.com/photo-1561602535-7f155201c950?auto=format&fit=crop&w=1400&q=80";
+    "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1400&q=80";
 
 const cards = [
     {
@@ -13,32 +14,38 @@ const cards = [
     {
         icon: Eye,
         title: "Our Vision",
-        text: "A globally recognized brand empowering wellness with high-quality agricultural products.",
+        text: "Globally recognized brand delivering high quality products and services.",
     },
 ];
 
 export const About = () => (
-    <section id="about" data-testid="about-section" className="noise relative py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-6 md:px-10">
+    <section id="about" data-testid="about-section" className="noise relative overflow-hidden py-24 md:py-32">
+        <FloatingLeaves
+            items={[
+                { top: "6%", right: "4%", size: 56, rotate: 20, duration: 7, className: "text-[#166534]/10" },
+                { bottom: "10%", left: "3%", size: 44, rotate: -30, duration: 8, delay: 1.2, className: "text-[#166534]/12" },
+            ]}
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
             <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
                 <div>
                     <Reveal>
                         <Chapter number="01" label="About AVP Nexaa" />
-                        <h2 className="font-display text-4xl font-medium leading-tight tracking-tight text-[#0F172A] sm:text-5xl">
-                            Rooted in Indian soil,
+                        <h2 className="font-display text-5xl font-medium leading-tight tracking-tight text-[#0F172A] sm:text-6xl">
+                            <SplitChars text="Rooted in Indian soil," />
                             <br />
-                            <em className="italic text-[#166534]">trusted worldwide.</em>
+                            <SplitChars text="trusted worldwide." className="text-[#166534]" />
                         </h2>
                     </Reveal>
                     <Reveal delay={0.1}>
-                        <p className="mt-7 max-w-xl text-base leading-relaxed text-[#475569] md:text-lg">
+                        <p className="mt-7 max-w-xl text-base leading-relaxed text-[#334155] md:text-lg">
                             AVP Nexaa is a trusted Indian B2B exporter of premium organic
                             dehydrated agricultural products, herbs and spices. We source
                             directly from certified farms and processing units — ensuring
                             every consignment meets the exacting standards of
                             international food trade.
                         </p>
-                        <p className="mt-5 max-w-xl text-base leading-relaxed text-[#475569] md:text-lg">
+                        <p className="mt-5 max-w-xl text-base leading-relaxed text-[#334155] md:text-lg">
                             From field selection to export-grade packaging, our team
                             manages the entire supply chain with transparency, consistency
                             and care.
@@ -57,17 +64,6 @@ export const About = () => (
                                 loading="lazy"
                             />
                         </div>
-                        <div className="absolute -bottom-6 -right-4 flex items-center gap-3 rounded-md bg-[#0B131F] px-5 py-4 shadow-xl md:-right-8">
-                            <MapPin size={18} className="text-[#D4AF37]" aria-hidden="true" />
-                            <div>
-                                <p className="text-xs uppercase tracking-[0.18em] text-white/60">
-                                    Headquartered in
-                                </p>
-                                <p className="text-sm font-semibold text-white">
-                                    Pune, Maharashtra, India
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </Reveal>
             </div>
@@ -85,7 +81,7 @@ export const About = () => (
                             <h3 className="font-display text-2xl font-medium text-[#0F172A]">
                                 {c.title}
                             </h3>
-                            <p className="mt-3 leading-relaxed text-[#475569]">{c.text}</p>
+                            <p className="mt-3 leading-relaxed text-[#334155]">{c.text}</p>
                         </div>
                     </Reveal>
                 ))}

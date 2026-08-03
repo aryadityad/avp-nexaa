@@ -4,9 +4,10 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import { scrollToId } from "../data/content";
 import { HeroParticles } from "./HeroParticles";
 import { Magnetic } from "./Magnetic";
+import { SplitChars } from "./Reveal";
 
 const HERO_IMG =
-    "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=2000&q=80";
+    "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=80";
 
 const MaskedLine = ({ children, delay, reduce }) => (
     <span className="block overflow-hidden pb-1">
@@ -75,10 +76,14 @@ export const Hero = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.15 }}
-                    className="mb-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] leading-relaxed text-[#D4AF37] md:tracking-[0.28em]"
+                    className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/25 bg-[#0B131F]/45 px-5 py-2.5 text-xs font-semibold uppercase leading-relaxed tracking-[0.18em] text-[#E9C96A] backdrop-blur-md md:tracking-[0.24em]"
                 >
-                    <span className="h-px w-12 bg-[#D4AF37]/70" />
-                    Premium Indian Exporter — Dehydrated Agri Products, Spices &amp; Herbs
+                    <span className="h-px w-12 shrink-0 bg-[#D4AF37]/70" />
+                    <SplitChars
+                        text="Premium Indian Exporter — Dehydrated Agri Products, Spices & Herbs"
+                        stagger={0.012}
+                        delay={0.2}
+                    />
                 </motion.p>
 
                 <h1 className="font-display max-w-4xl text-5xl font-medium leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -86,7 +91,7 @@ export const Hero = () => {
                         Connecting Local Harvests
                     </MaskedLine>
                     <MaskedLine delay={0.4} reduce={reduce}>
-                        to <em className="italic text-[#D4AF37]">Global Markets</em>
+                        to <span className="text-[#D4AF37]">Global Markets</span>
                     </MaskedLine>
                 </h1>
 
@@ -94,11 +99,11 @@ export const Hero = () => {
                     initial={{ opacity: 0, y: reduce ? 0 : 16 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: "easeOut", delay: 0.75 }}
-                    className="mt-6 max-w-xl text-base leading-relaxed text-white/80 md:text-lg"
+                    className="mt-6 max-w-xl text-base leading-relaxed text-white/90 md:text-lg"
                 >
-                    Collaborate. Connect. Grow. AVP Nexaa partners with certified Indian
-                    farms to deliver organic, export-grade dehydrated produce, spices and
-                    herbs to buyers across the world.
+                    AVP Nexaa partners with certified Indian farms to deliver organic,
+                    export-grade dehydrated produce, spices and herbs to buyers across
+                    the world.
                 </motion.p>
 
                 <motion.div

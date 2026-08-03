@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Languages } from "lucide-react";
 
-export const GoogleTranslate = ({ light = false }) => {
+export const GoogleTranslate = () => {
     useEffect(() => {
         window.googleTranslateElementInit = () => {
             if (document.getElementById("google-translate-element").childNodes.length) return;
@@ -30,7 +30,7 @@ export const GoogleTranslate = ({ light = false }) => {
 
     return (
         <div
-            className={`flex items-center gap-1.5 ${light ? "text-white" : "text-[#0F172A]"}`}
+            className="flex items-center gap-1 rounded-full border border-[#0F172A]/15 px-3 py-1.5 text-[#0F172A] transition-colors duration-300 hover:border-[#166534]/50"
             data-testid="language-switcher"
         >
             <Languages size={15} strokeWidth={2} aria-hidden="true" />

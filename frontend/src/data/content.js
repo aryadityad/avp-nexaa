@@ -4,9 +4,9 @@ export const CONTACT = {
     whatsapp: "https://wa.me/919112374325",
     email: "info@avpnexaa.com",
     address:
-        "Plot No. 73, Sector 19, Koyananagar, Chinchwad, Pune – 411019, Maharashtra, India",
+        "Plot No. 73, Vitthal Nagar, Sector 19, Koyana Nagar, Chikhali, Pimpri-Chinchwad, Maharashtra 411019, India",
     mapEmbed:
-        "https://maps.google.com/maps?q=Chinchwad,%20Pune,%20Maharashtra,%20India&t=&z=13&ie=UTF8&iwloc=&output=embed",
+        "https://maps.google.com/maps?q=18.6681738,73.7976322&z=16&ie=UTF8&iwloc=&output=embed",
 };
 
 export const NAV_LINKS = [
@@ -17,42 +17,77 @@ export const NAV_LINKS = [
     { label: "Contact", id: "contact" },
 ];
 
-export const PRODUCTS = [
+export const PRODUCT_CATEGORIES = [
     {
-        name: "Moringa Powder",
-        slug: "moringa-powder",
-        description:
-            "Nutrient-dense superfood powder, export-grade and hygienically processed from premium moringa leaves.",
-        image: "https://images.unsplash.com/photo-1781377012601-93162be3a433?auto=format&fit=crop&w=900&q=80",
-        alt: "Vibrant green moringa powder in a wooden bowl",
-    },
-    {
-        name: "Turmeric Powder",
-        slug: "turmeric-powder",
-        description:
-            "High-curcumin turmeric with vibrant colour, sourced from certified Indian farms and milled to order.",
-        image: "https://images.unsplash.com/photo-1594813593996-7f0d9868ce8e?auto=format&fit=crop&w=900&q=80",
-        alt: "Golden turmeric powder in a glass jar, top view",
-    },
-    {
-        name: "Amla Powder",
-        slug: "amla-powder",
-        description:
-            "Naturally rich in Vitamin C — sun-dried and gently processed to preserve nutrition and potency.",
-        image: "https://images.unsplash.com/photo-1594813592990-2449cd47da8b?auto=format&fit=crop&w=900&q=80",
-        alt: "Fine amla powder in a clear glass jar",
-    },
-    {
-        name: "Chilli Powder",
-        slug: "chilli-powder",
-        description:
-            "Consistent heat and colour, processed to international food-safety standards for global buyers.",
-        image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80",
-        alt: "Dried red chillies and freshly ground chilli powder",
+        slug: "dehydrated-products-spices",
+        name: "Dehydrated Products & Spices",
+        products: [
+            {
+                name: "Moringa Powder",
+                slug: "moringa-powder",
+                description:
+                    "Nutrient-dense superfood powder, export-grade and hygienically processed from premium moringa leaves.",
+                longDescription:
+                    "Our moringa powder is produced from hand-selected moringa leaves, shade-dried and milled under strict hygiene protocols to retain colour, aroma and nutritional density. A versatile superfood ingredient for nutraceutical, food and wellness applications worldwide.",
+                image: "https://images.unsplash.com/photo-1781377012601-93162be3a433?auto=format&fit=crop&w=900&q=80",
+                alt: "Vibrant green moringa powder in a wooden bowl",
+            },
+            {
+                name: "Turmeric Powder",
+                slug: "turmeric-powder",
+                description:
+                    "High-curcumin turmeric with vibrant colour, sourced from certified Indian farms and milled to order.",
+                longDescription:
+                    "Sourced from certified farms across India's premier turmeric belts, our turmeric powder offers high curcumin content and a deep, vibrant colour. Every batch is cleaned, dried and milled to order for maximum freshness in food, beverage and supplement formulations.",
+                image: "https://images.unsplash.com/photo-1594813593996-7f0d9868ce8e?auto=format&fit=crop&w=900&q=80",
+                alt: "Golden turmeric powder in a glass jar, top view",
+            },
+            {
+                name: "Amla Powder",
+                slug: "amla-powder",
+                description:
+                    "Naturally rich in Vitamin C — sun-dried and gently processed to preserve nutrition and potency.",
+                longDescription:
+                    "Made from carefully graded Indian gooseberries, our amla powder is sun-dried and gently processed to preserve its naturally high Vitamin C content and potency. Ideal for health foods, ayurvedic formulations and personal-care applications.",
+                image: "https://images.unsplash.com/photo-1594813592990-2449cd47da8b?auto=format&fit=crop&w=900&q=80",
+                alt: "Fine amla powder in a clear glass jar",
+            },
+            {
+                name: "Chilli Powder",
+                slug: "chilli-powder",
+                description:
+                    "Consistent heat and colour, processed to international food-safety standards for global buyers.",
+                longDescription:
+                    "Ground from stemless, sun-dried red chillies, our chilli powder delivers consistent heat and brilliant colour batch after batch. Processed and packed to international food-safety standards for retail, food-service and industrial buyers.",
+                image: "/assets/products/chilli-powder.jpg",
+                alt: "Freshly ground red chilli powder",
+            },
+        ],
     },
 ];
 
-export const CERTIFICATIONS = ["FSSAI", "APEDA", "IEC", "GST", "MSME", "ISO"];
+export const PRODUCTS = PRODUCT_CATEGORIES.flatMap((c) => c.products);
+
+export const SERVED_COUNTRIES = [
+    { name: "USA", code: "us" },
+    { name: "UK", code: "gb" },
+    { name: "UAE", code: "ae" },
+    { name: "Iraq", code: "iq" },
+    { name: "Saudi Arabia", code: "sa" },
+    { name: "Germany", code: "de" },
+    { name: "France", code: "fr" },
+    { name: "Sri Lanka", code: "lk" },
+    { name: "Malaysia", code: "my" },
+];
+
+export const CERTIFICATIONS = [
+    { name: "FSSAI", img: "/assets/certs/fssai.png" },
+    { name: "APEDA", img: "/assets/certs/apeda.png" },
+    { name: "IEC", img: null },
+    { name: "GST", img: null },
+    { name: "MSME", img: "/assets/certs/msme.png" },
+    { name: "ISO", img: "/assets/certs/iso.png" },
+];
 
 export const COUNTRIES = [
     "United Arab Emirates",

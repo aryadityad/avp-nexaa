@@ -1,5 +1,3 @@
-import { Leaf } from "lucide-react";
-
 const ITEMS = [
     "Organic Dehydrated Produce",
     "Premium Spices & Herbs",
@@ -12,10 +10,15 @@ const Row = () => (
     <div className="flex shrink-0 items-center">
         {ITEMS.map((item, i) => (
             <span key={i} className="flex items-center">
-                <span className="font-display px-8 text-lg italic tracking-wide text-white/90 md:text-xl">
+                <span className="font-display px-8 text-lg tracking-wide text-white/90 md:text-xl">
                     {item}
                 </span>
-                <Leaf size={15} className="text-[#D4AF37]" aria-hidden="true" />
+                <img
+                    src="/assets/logo-mark.png"
+                    alt=""
+                    loading="lazy"
+                    className="h-7 w-7 rounded-full bg-white object-cover p-0.5"
+                />
             </span>
         ))}
     </div>
