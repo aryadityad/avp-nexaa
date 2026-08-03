@@ -6,7 +6,7 @@ export const CONTACT = {
     address:
         "Plot No. 73, Vitthal Nagar, Sector 19, Koyana Nagar, Chikhali, Pimpri-Chinchwad, Maharashtra 411019, India",
     mapEmbed:
-        "https://maps.google.com/maps?q=18.6681738,73.7976322&z=16&ie=UTF8&iwloc=&output=embed",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d472.4888673899328!2d73.7970875!3d18.6679921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b735af95db6b%3A0x775923a01d710733!2sAVP%20Nexaa!5e0!3m2!1sen!2sin!4v1785780795143!5m2!1sen!2sin",
 };
 
 export const NAV_LINKS = [
