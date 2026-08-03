@@ -77,7 +77,6 @@ export const Hero = () => {
                     transition={{ duration: 0.6, delay: 0.15 }}
                     className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/25 bg-[#0B131F]/45 px-5 py-2.5 text-xs font-semibold uppercase leading-relaxed tracking-[0.18em] text-[#E9C96A] backdrop-blur-md md:tracking-[0.24em]"
                 >
-                    <span className="h-px w-12 shrink-0 bg-[#D4AF37]/70" />
                     <SplitChars
                         text="Premium Indian Exporter — Dehydrated Agri Products, Spices & Herbs"
                         stagger={0.012}

@@ -55,9 +55,6 @@ export const SplitChars = ({ text, className = "", delay = 0, stagger = 0.02 }) 
 export const Chapter = ({ label, light = false }) => (
     <div className="mb-4 flex items-center gap-4">
         <span
-            className={`h-px w-10 ${light ? "bg-[#D4AF37]/60" : "bg-[#166534]/40"}`}
-        />
-        <span
             className={`text-xs font-semibold uppercase tracking-[0.22em] ${
                 light ? "text-[#D4AF37]" : "text-[#166534]"
             }`}
