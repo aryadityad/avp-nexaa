@@ -36,6 +36,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-03 (hero swap): Hero background replaced with client-supplied spice flat-lay (hero-spices.jpg, optimized 591KB), overlay retuned for the darker image.
 
+- 2026-08-03 (ticker fix): Editorial marquee re-engineered from CSS keyframes to a JS rAF loop (45px/s, seamless wrap at half-width, hover pause) — the CSS version was frozen on devices with reduce-motion enabled. Verified moving in normal AND reduced-motion emulation.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)

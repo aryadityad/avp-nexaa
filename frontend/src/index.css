@@ -64,23 +64,6 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* Slow editorial marquee */
-@keyframes marquee-drift {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-.animate-marquee {
-    animation: marquee-drift 42s linear infinite;
-    will-change: transform;
-}
-.animate-marquee:hover {
-    animation-play-state: paused;
-}
-
 /* Google Translate widget — hide default chrome, blend into header */
 .goog-te-banner-frame.skiptranslate,
 #goog-gt-tt,
@@ -115,9 +98,6 @@ body {
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    .animate-marquee {
-        animation: none;
-    }
     *,
     *::before,
     *::after {
