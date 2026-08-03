@@ -46,6 +46,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-03 (revision 4): Hero copy "dehydrated produce" → "dehydrated products" (site-wide check done — only occurrence). IEC and GST client logos added — certifications row now complete with all 6 real badges. Map switched to official Google Business embed (AVP Nexaa pin).
 
+- 2026-08-03 (revision 5): About "Rooted in Indian soil" image replaced with client-supplied soil/seedlings photo (optimized 249KB). Fixed two remaining non-compiling opacity classes in About (dark leaf + icon tint now correct greens).
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)

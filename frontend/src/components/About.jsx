@@ -2,8 +2,7 @@ import { Eye, Target } from "lucide-react";
 import { Chapter, Reveal, SplitChars } from "./Reveal";
 import { FloatingLeaves } from "./FloatingLeaves";
 
-const ABOUT_IMG =
-    "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1400&q=80";
+const ABOUT_IMG = "/assets/about-soil.jpg";
 
 const cards = [
     {
@@ -23,7 +22,7 @@ export const About = () => (
         <FloatingLeaves
             items={[
                 { top: "6%", right: "4%", size: 56, rotate: 20, duration: 7, className: "text-[#166534]/10" },
-                { bottom: "10%", left: "3%", size: 44, rotate: -30, duration: 8, delay: 1.2, className: "text-[#166534]/12" },
+                { bottom: "10%", left: "3%", size: 44, rotate: -30, duration: 8, delay: 1.2, className: "text-[#166534]/15" },
             ]}
         />
         <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
@@ -59,7 +58,7 @@ export const About = () => (
                         <div className="relative overflow-hidden rounded-md shadow-[0_20px_50px_rgb(0,0,0,0.12)]">
                             <img
                                 src={ABOUT_IMG}
-                                alt="Verdant Indian farmland under an open sky"
+                                alt="Young green seedlings growing in rich dark Indian soil"
                                 className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
                                 loading="lazy"
                             />
@@ -75,7 +74,7 @@ export const About = () => (
                             data-testid={`card-${c.title === "Our Mission" ? "mission" : "vision"}`}
                             className="group h-full rounded-md border border-[#0F172A]/10 bg-white p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#D4AF37]/60 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)]"
                         >
-                            <span className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#166534]/8 text-[#166534] transition-colors duration-300 group-hover:bg-[#166534] group-hover:text-white">
+                            <span className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#166534]/10 text-[#166534] transition-colors duration-300 group-hover:bg-[#166534] group-hover:text-white">
                                 <c.icon size={22} aria-hidden="true" />
                             </span>
                             <h3 className="font-display text-2xl font-medium text-[#0F172A]">
