@@ -48,6 +48,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-03 (revision 5): About "Rooted in Indian soil" image replaced with client-supplied soil/seedlings photo (optimized 249KB). Fixed two remaining non-compiling opacity classes in About (dark leaf + icon tint now correct greens).
 
+- 2026-08-03 (share card v3): OG image regenerated with final full logo chip (tagline visible), Hanken Grotesk headline, spice hero background — matches live branding.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)
