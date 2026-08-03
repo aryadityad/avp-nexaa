@@ -81,7 +81,7 @@ export const ProductPage = () => {
 
                         <Reveal delay={0.1}>
                             <dl
-                                className="mt-8 divide-y divide-[#0F172A]/8 rounded-md border border-[#0F172A]/10 bg-white"
+                                className="mt-8 divide-y divide-[#0F172A]/10 rounded-md border border-[#0F172A]/10 bg-white"
                                 data-testid="product-spec-table"
                             >
                                 {SPECS.map((s) => (

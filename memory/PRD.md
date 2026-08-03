@@ -40,6 +40,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-03 (share card v2 + dash cleanup): OG image regenerated on the spice hero photo; decorative dash lines removed from hero pill and all Chapter section labels.
 
+- 2026-08-03 (revision 3): Blue (original) logo mark restored in header/footer/marquee/favicon, nexaa wordmark tinted blue. Fixed clipped "g" descender in hero (MaskedLine padding). Ticker item now "Organic Dehydrated Products". Products H2 → "Perfect for export.", category line/count removed, bigger card descriptions. Why Organic: comma copy, larger section/typography. Why Choose Us cards now use bullet lists. Root-caused "black leaves" bug: Tailwind /6, /8, /12 opacity modifiers don't compile (fell back to navy) — normalized to /5, /10, /15 across 7 files.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)

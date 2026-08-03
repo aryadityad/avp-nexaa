@@ -6,7 +6,7 @@ export const Certifications = () => (
     <section
         id="certifications"
         data-testid="certifications-section"
-        className="border-y border-[#0F172A]/6 bg-white py-24 md:py-28"
+        className="border-y border-[#0F172A]/5 bg-white py-24 md:py-28"
     >
         <div className="mx-auto max-w-7xl px-6 md:px-10">
             <Reveal>

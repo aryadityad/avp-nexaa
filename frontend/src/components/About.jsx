@@ -73,7 +73,7 @@ export const About = () => (
                     <Reveal key={c.title} delay={i * 0.12}>
                         <div
                             data-testid={`card-${c.title === "Our Mission" ? "mission" : "vision"}`}
-                            className="group h-full rounded-md border border-[#0F172A]/8 bg-white p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#D4AF37]/60 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)]"
+                            className="group h-full rounded-md border border-[#0F172A]/10 bg-white p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#D4AF37]/60 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)]"
                         >
                             <span className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#166534]/8 text-[#166534] transition-colors duration-300 group-hover:bg-[#166534] group-hover:text-white">
                                 <c.icon size={22} aria-hidden="true" />

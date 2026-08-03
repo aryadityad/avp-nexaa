@@ -9,7 +9,7 @@ import { SplitChars } from "./Reveal";
 const HERO_IMG = "/assets/hero-spices.jpg";
 
 const MaskedLine = ({ children, delay, reduce }) => (
-    <span className="block overflow-hidden pb-1">
+    <span className="-mb-3 block overflow-hidden pb-3">
         <motion.span
             className="block"
             initial={reduce ? { opacity: 0 } : { y: "115%" }}

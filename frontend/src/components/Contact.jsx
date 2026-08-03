@@ -5,7 +5,7 @@ import { CONTACT, COUNTRIES } from "../data/content";
 import { Chapter, Reveal, SplitChars } from "./Reveal";
 
 const inputCls =
-    "w-full rounded-md border border-[#0F172A]/12 bg-[#F8FAF9] px-4 py-3 text-sm text-[#0F172A] placeholder-[#475569]/50 transition-all duration-200 focus:border-[#166534] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/40";
+    "w-full rounded-md border border-[#0F172A]/10 bg-[#F8FAF9] px-4 py-3 text-sm text-[#0F172A] placeholder-[#475569]/50 transition-all duration-200 focus:border-[#166534] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/40";
 
 const INFO = [
     { icon: Phone, label: "Phone / WhatsApp", value: CONTACT.phone, href: CONTACT.phoneHref },

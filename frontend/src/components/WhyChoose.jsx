@@ -18,32 +18,50 @@ const REASONS = [
     {
         icon: Award,
         title: "Premium Quality",
-        text: "Premium-quality dehydrated agricultural products and spices, batch-tested before dispatch.",
+        bullets: [
+            "Batch-tested dehydrated products & spices",
+            "Export-grade quality on every consignment",
+        ],
     },
     {
         icon: Handshake,
         title: "Direct Sourcing",
-        text: "Sourced directly from trusted Indian farmers and manufacturers — no middle layers.",
+        bullets: [
+            "Straight from trusted farmers & manufacturers",
+            "No middle layers, full traceability",
+        ],
     },
     {
         icon: ShieldCheck,
         title: "Strict Quality Control",
-        text: "Rigorous QC at every stage with export-grade packaging built for long-haul transit.",
+        bullets: [
+            "Rigorous QC at every stage",
+            "Export-grade packaging for long-haul transit",
+        ],
     },
     {
         icon: BadgeDollarSign,
         title: "Competitive Pricing",
-        text: "Fair, competitive pricing backed by a consistent and reliable supply pipeline.",
+        bullets: [
+            "Fair pricing with consistent supply",
+            "Reliable volumes for repeat orders",
+        ],
     },
     {
         icon: Package,
         title: "Custom Packaging",
-        text: "Private-label and custom packaging formats tailored to your market requirements.",
+        bullets: [
+            "Private-label formats available",
+            "Tailored to your market requirements",
+        ],
     },
     {
         icon: Ship,
         title: "On-Time Global Delivery",
-        text: "On-time global delivery with professional, end-to-end export documentation support.",
+        bullets: [
+            "On-time dispatch to global ports",
+            "Complete export documentation support",
+        ],
     },
 ];
 
@@ -78,7 +96,7 @@ export const WhyChoose = () => (
     >
         <FloatingLeaves
             items={[
-                { top: "8%", left: "2%", size: 50, rotate: -15, duration: 7.5, className: "text-[#166534]/8" },
+                { top: "8%", left: "2%", size: 50, rotate: -15, duration: 7.5, className: "text-[#166534]/10" },
                 { bottom: "6%", right: "3%", size: 40, rotate: 35, duration: 6.5, delay: 0.8, className: "text-[#166534]/10" },
             ]}
         />
@@ -103,19 +121,30 @@ export const WhyChoose = () => (
                         <Tilt className="h-full" max={5}>
                             <div
                                 data-testid={`why-card-${i + 1}`}
-                                className="group h-full rounded-md border border-[#0F172A]/8 bg-white p-8 transition-shadow duration-300 hover:shadow-[0_20px_40px_rgb(0,0,0,0.07)]"
+                                className="group h-full rounded-md border border-[#0F172A]/10 bg-white p-8 transition-shadow duration-300 hover:shadow-[0_20px_40px_rgb(0,0,0,0.07)]"
                             >
                             <div className="flex items-start">
-                                <span className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-[#166534]/8 text-[#166534] transition-colors duration-300 group-hover:bg-[#166534] group-hover:text-white">
+                                <span className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-[#166534]/10 text-[#166534] transition-colors duration-300 group-hover:bg-[#166534] group-hover:text-white">
                                     <r.icon size={20} aria-hidden="true" />
                                 </span>
                             </div>
                             <h3 className="mt-6 font-display text-xl font-medium text-[#0F172A]">
                                 {r.title}
                             </h3>
-                            <p className="mt-2.5 text-sm leading-relaxed text-[#334155]">
-                                {r.text}
-                            </p>
+                            <ul className="mt-3 space-y-1.5">
+                                {r.bullets.map((b) => (
+                                    <li
+                                        key={b}
+                                        className="flex items-start gap-2.5 text-sm leading-relaxed text-[#334155]"
+                                    >
+                                        <span
+                                            className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#166534]"
+                                            aria-hidden="true"
+                                        />
+                                        {b}
+                                    </li>
+                                ))}
+                            </ul>
                             </div>
                         </Tilt>
                     </Reveal>
@@ -136,9 +165,9 @@ export const WhyChoose = () => (
                         <Reveal key={f.title} delay={(i % 2) * 0.1}>
                             <div
                                 data-testid={`feature-${i + 1}`}
-                                className="group flex h-full items-start gap-5 rounded-md border border-[#0F172A]/8 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/60 hover:shadow-[0_18px_36px_rgb(0,0,0,0.07)]"
+                                className="group flex h-full items-start gap-5 rounded-md border border-[#0F172A]/10 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/60 hover:shadow-[0_18px_36px_rgb(0,0,0,0.07)]"
                             >
-                                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-[#D4AF37]/12 text-[#8A6D1C] transition-colors duration-300 group-hover:bg-[#D4AF37] group-hover:text-[#0B131F]">
+                                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-[#D4AF37]/15 text-[#8A6D1C] transition-colors duration-300 group-hover:bg-[#D4AF37] group-hover:text-[#0B131F]">
                                     <f.icon size={20} aria-hidden="true" />
                                 </span>
                                 <div>

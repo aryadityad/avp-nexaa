@@ -21,7 +21,7 @@ export const Header = () => {
     return (
         <header
             data-testid="site-header"
-            className="fixed inset-x-0 top-0 z-50 border-b border-[#0F172A]/8 bg-white/90 py-3 shadow-[0_8px_30px_rgb(0,0,0,0.05)] backdrop-blur-xl backdrop-saturate-150"
+            className="fixed inset-x-0 top-0 z-50 border-b border-[#0F172A]/10 bg-white/90 py-3 shadow-[0_8px_30px_rgb(0,0,0,0.05)] backdrop-blur-xl backdrop-saturate-150"
         >
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-10">
                 <button
@@ -37,7 +37,7 @@ export const Header = () => {
                     />
                     <span className="flex flex-col">
                         <span className="text-lg font-bold leading-tight tracking-wide text-[#16382B]">
-                            AVP <span className="font-semibold text-[#166534]">nexaa</span>
+                            AVP <span className="font-semibold text-[#3182CE]">nexaa</span>
                         </span>
                         <span className="text-[10px] font-medium leading-tight tracking-[0.06em] text-[#166534]">
                             Collaborate. Connect. Grow.
@@ -66,7 +66,7 @@ export const Header = () => {
                                     <span className="absolute -bottom-1 left-0 h-px w-0 bg-[#D4AF37] transition-all duration-300 group-hover/link:w-full" />
                                 </button>
                                 <div className="invisible absolute left-1/2 top-full z-50 w-72 -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
-                                    <div className="rounded-md border border-[#0F172A]/8 bg-white p-2 shadow-[0_20px_45px_rgb(0,0,0,0.12)]">
+                                    <div className="rounded-md border border-[#0F172A]/10 bg-white p-2 shadow-[0_20px_45px_rgb(0,0,0,0.12)]">
                                         {PRODUCT_CATEGORIES.map((c) => (
                                             <button
                                                 key={c.slug}
