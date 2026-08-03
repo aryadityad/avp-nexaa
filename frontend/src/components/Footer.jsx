@@ -34,25 +34,22 @@ export const Footer = () => (
             <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
                 <div>
                     <div className="flex items-center gap-3">
-                        <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-md bg-white p-1 ring-1 ring-black/5">
+                        <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-md bg-white p-1 ring-1 ring-black/5">
                             <img
                                 src="/assets/logo-mark.png"
                                 alt="AVP Nexaa logo mark"
                                 className="h-full w-auto object-contain"
                             />
                         </span>
-                        <span className="flex flex-col leading-none">
-                            <span className="text-xl font-bold tracking-wide text-white">
-                                AVP
+                        <span className="flex flex-col">
+                            <span className="text-lg font-bold leading-tight tracking-wide text-white">
+                                AVP <span className="font-semibold text-[#D4AF37]">nexaa</span>
                             </span>
-                            <span className="text-[11px] font-semibold tracking-[0.42em] text-[#D4AF37]">
-                                nexaa
+                            <span className="text-[10px] font-medium leading-tight tracking-[0.06em] text-[#D4AF37]">
+                                Collaborate. Connect. Grow.
                             </span>
                         </span>
                     </div>
-                    <p className="font-display mt-4 text-sm text-[#D4AF37]">
-                        Collaborate. Connect. Grow.
-                    </p>
                     <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/55">
                         Premium Indian B2B exporter of organic dehydrated agricultural
                         products, herbs and spices.

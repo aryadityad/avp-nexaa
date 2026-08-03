@@ -1,8 +1,23 @@
-import { useEffect } from "react";
-import { Languages } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Globe } from "lucide-react";
+
+const LANG_NAMES = {
+    en: "English", ar: "العربية", fr: "Français", es: "Español", pt: "Português",
+    de: "Deutsch", it: "Italiano", nl: "Nederlands", ru: "Русский",
+    "zh-CN": "中文(简体)", "zh-TW": "中文(繁體)", ja: "日本語", ko: "한국어",
+    hi: "हिन्दी", bn: "বাংলা", ta: "தமிழ்", te: "తెలుగు", mr: "मराठी",
+    gu: "ગુજરાતી", kn: "ಕನ್ನಡ", ml: "മലയാളം", pa: "ਪੰਜਾਬੀ", ur: "اردو",
+    th: "ไทย", vi: "Tiếng Việt", id: "Bahasa Indonesia", ms: "Bahasa Melayu",
+    tr: "Türkçe", fa: "فارسی", sw: "Kiswahili", pl: "Polski", uk: "Українська",
+    el: "Ελληνικά", he: "עברית",
+};
 
 export const GoogleTranslate = () => {
+    const [lang, setLang] = useState("en");
+
     useEffect(() => {
+        const m = document.cookie.match(/googtrans=\/en\/([a-z]{2}(?:-[A-Z]{2})?)/);
+        if (m) setLang(m[1]);
         window.googleTranslateElementInit = () => {
             if (document.getElementById("google-translate-element").childNodes.length) return;
             new window.google.translate.TranslateElement(
@@ -30,10 +45,11 @@ export const GoogleTranslate = () => {
 
     return (
         <div
-            className="flex items-center gap-1 rounded-full border border-[#0F172A]/15 px-3 py-1.5 text-[#0F172A] transition-colors duration-300 hover:border-[#166534]/50"
+            className="relative flex items-center gap-2 rounded-full border border-[#0F172A]/15 px-3.5 py-1.5 text-[#0F172A] transition-colors duration-300 hover:border-[#166534]/50"
             data-testid="language-switcher"
         >
-            <Languages size={15} strokeWidth={2} aria-hidden="true" />
+            <span className="text-sm font-medium">{LANG_NAMES[lang] || "English"}</span>
+            <Globe size={15} strokeWidth={2} className="text-[#166534]" aria-hidden="true" />
             <div id="google-translate-element" />
         </div>
     );

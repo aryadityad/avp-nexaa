@@ -33,14 +33,14 @@ export const Header = () => {
                     <img
                         src="/assets/logo-mark.png"
                         alt="AVP Nexaa logo mark"
-                        className="h-11 w-auto object-contain"
+                        className="h-12 w-auto object-contain"
                     />
-                    <span className="flex flex-col leading-none">
-                        <span className="text-xl font-bold tracking-wide text-[#16382B]">
-                            AVP
+                    <span className="flex flex-col">
+                        <span className="text-lg font-bold leading-tight tracking-wide text-[#16382B]">
+                            AVP <span className="font-semibold text-[#166534]">nexaa</span>
                         </span>
-                        <span className="text-[11px] font-semibold tracking-[0.42em] text-[#166534]">
-                            nexaa
+                        <span className="text-[10px] font-medium leading-tight tracking-[0.06em] text-[#166534]">
+                            Collaborate. Connect. Grow.
                         </span>
                     </span>
                 </button>
