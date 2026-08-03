@@ -100,7 +100,7 @@ export const Hero = () => {
                     className="mt-6 max-w-xl text-base leading-relaxed text-white/90 md:text-lg"
                 >
                     AVP Nexaa partners with certified Indian farms to deliver organic,
-                    export-grade dehydrated produce, spices and herbs to buyers across
+                    export-grade dehydrated products, spices and herbs to buyers across
                     the world.
                 </motion.p>
 

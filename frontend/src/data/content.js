@@ -83,8 +83,8 @@ export const SERVED_COUNTRIES = [
 export const CERTIFICATIONS = [
     { name: "FSSAI", img: "/assets/certs/fssai.png" },
     { name: "APEDA", img: "/assets/certs/apeda.png" },
-    { name: "IEC", img: null },
-    { name: "GST", img: null },
+    { name: "IEC", img: "/assets/certs/iec.webp" },
+    { name: "GST", img: "/assets/certs/gst.jpg" },
     { name: "MSME", img: "/assets/certs/msme.png" },
     { name: "ISO", img: "/assets/certs/iso.png" },
 ];

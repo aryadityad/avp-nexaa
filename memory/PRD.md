@@ -44,12 +44,14 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-03 (final logo + rebrand pass): Final client logo (mark + AVP nexaa + tagline) displayed in full in header (taller bar) and footer (white chip); trimmed logo-full.png + green mark re-cropped for favicon/marquee chips. All blue removed from header — accents now logo green #0CA56F (= Baker Hughes #02A783 family). Entire site switched to Hanken Grotesk (closest free match to Baker Hughes' proprietary NexusSans) for both body and headings.
 
+- 2026-08-03 (revision 4): Hero copy "dehydrated produce" → "dehydrated products" (site-wide check done — only occurrence). IEC and GST client logos added — certifications row now complete with all 6 real badges. Map switched to official Google Business embed (AVP Nexaa pin).
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)
-- P1: Swap remaining placeholders — final product photography, IEC/GST badge files, testimonials
+- P1: Final product photography for the 4 product cards, testimonials
 - P1: More product categories (data structure ready — add to PRODUCT_CATEGORIES in src/data/content.js)
-- P2: Testimonials section, blog/insights, OG share image, schema.org structured data
+- P2: Testimonials section, blog/insights, schema.org structured data
 - P2: Analytics events on CTAs, downloadable product catalog PDF
 
 ## Next Tasks
