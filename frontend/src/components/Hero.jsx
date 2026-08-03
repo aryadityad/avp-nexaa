@@ -6,8 +6,7 @@ import { HeroParticles } from "./HeroParticles";
 import { Magnetic } from "./Magnetic";
 import { SplitChars } from "./Reveal";
 
-const HERO_IMG =
-    "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=80";
+const HERO_IMG = "/assets/hero-spices.jpg";
 
 const MaskedLine = ({ children, delay, reduce }) => (
     <span className="block overflow-hidden pb-1">
@@ -54,13 +53,13 @@ export const Hero = () => {
                 >
                     <img
                         src={HERO_IMG}
-                        alt="Lush green agricultural farmland stretching to the horizon"
+                        alt="Aromatic Indian spices — dried chillies, turmeric, cardamom and curry leaves on dark slate"
                         className="h-[120%] w-full object-cover"
                         fetchpriority="high"
                     />
                 </motion.div>
             </motion.div>
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B131F]/90 via-[#0B131F]/45 to-[#0B131F]/30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0B131F]/85 via-[#0B131F]/40 to-[#0B131F]/25" />
             <div className="absolute inset-0 bg-[#166534]/10 mix-blend-multiply" />
             <div
                 className="pointer-events-none absolute inset-0 z-[5]"

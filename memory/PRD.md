@@ -34,6 +34,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-03 (link preview): Branded 1200×630 OG share image composed from hero art + logo (public/assets/og-image.jpg); Open Graph + Twitter Card meta tags wired in index.html using %REACT_APP_BACKEND_URL% so the image URL is absolute. Verified tags served and image returns 200.
 
+- 2026-08-03 (hero swap): Hero background replaced with client-supplied spice flat-lay (hero-spices.jpg, optimized 591KB), overlay retuned for the darker image.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)
