@@ -16,6 +16,12 @@ export const GoogleTranslate = () => {
     const [lang, setLang] = useState("en");
 
     useEffect(() => {
+        const raw = document.cookie.match(/googtrans=([^;]+)/);
+        if (raw && decodeURIComponent(raw[1]) === "/en/en") {
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            window.location.reload();
+            return;
+        }
         const m = document.cookie.match(/googtrans=\/en\/([a-z]{2}(?:-[A-Z]{2})?)/);
         if (m) setLang(m[1]);
         window.googleTranslateElementInit = () => {

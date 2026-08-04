@@ -25,6 +25,7 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: "Moringa Powder",
                 slug: "moringa-powder",
+                scientific: "Moringa oleifera",
                 description:
                     "Nutrient-dense superfood powder, export-grade and hygienically processed from premium moringa leaves.",
                 longDescription:
@@ -35,6 +36,7 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: "Turmeric Powder",
                 slug: "turmeric-powder",
+                scientific: "Curcuma longa",
                 description:
                     "High-curcumin turmeric with vibrant colour, sourced from certified Indian farms and milled to order.",
                 longDescription:
@@ -45,6 +47,7 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: "Amla Powder",
                 slug: "amla-powder",
+                scientific: "Phyllanthus emblica",
                 description:
                     "Naturally rich in Vitamin C — sun-dried and gently processed to preserve nutrition and potency.",
                 longDescription:
@@ -55,6 +58,7 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: "Chilli Powder",
                 slug: "chilli-powder",
+                scientific: "Capsicum annuum",
                 description:
                     "Consistent heat and colour, processed to international food-safety standards for global buyers.",
                 longDescription:

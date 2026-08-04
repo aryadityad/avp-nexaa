@@ -6,7 +6,7 @@ import { HeroParticles } from "./HeroParticles";
 import { Magnetic } from "./Magnetic";
 import { SplitChars } from "./Reveal";
 
-const HERO_IMG = "/assets/hero-spices.jpg";
+const HERO_IMG = "/assets/hero-field.jpg";
 
 const MaskedLine = ({ children, delay, reduce }) => (
     <span className="-mb-3 block overflow-hidden pb-3">

@@ -50,6 +50,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-03 (share card v3): OG image regenerated with final full logo chip (tagline visible), Hanken Grotesk headline, spice hero background — matches live branding.
 
+- 2026-08-04 (revision 6): Transparent-background final logo now used everywhere (header blends with bar, footer white chip, favicon, ticker chips, OG card). Hero bg replaced with client hi-res wheat sunset (344KB optimized); OG card regenerated to match. Products H2 → "Perfect for Export"; scientific names added to all 4 products (cards + product pages). Translation reset fix: googtrans=/en/en (user re-selected English) now clears cookie + reloads once so no translated fragments linger — verified via cookie simulation.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)

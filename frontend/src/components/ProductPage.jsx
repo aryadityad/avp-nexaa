@@ -74,6 +74,9 @@ export const ProductPage = () => {
                             <h1 className="font-display mt-3 text-4xl font-medium tracking-tight text-[#0F172A] sm:text-5xl">
                                 <SplitChars text={product.name} />
                             </h1>
+                            <p className="mt-2 text-sm font-medium text-[#0CA56F]">
+                                ({product.scientific})
+                            </p>
                             <p className="mt-5 text-base leading-relaxed text-[#334155] md:text-lg">
                                 {product.longDescription || product.description}
                             </p>

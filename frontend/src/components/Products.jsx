@@ -18,7 +18,7 @@ export const Products = () => (
                 <Chapter number="03" label="Our Products" />
                 <div className="flex flex-wrap items-end justify-between gap-6">
                     <h2 className="font-display max-w-2xl text-4xl font-medium leading-tight tracking-tight text-[#0F172A] sm:text-5xl">
-                        <SplitChars text="Perfect for export." />
+                        <SplitChars text="Perfect for Export" />
                     </h2>
                     <p className="max-w-md text-base leading-relaxed text-[#334155]">
                         Our flagship range of organic powders — processed under strict
@@ -59,6 +59,9 @@ export const Products = () => (
                                 <h3 className="font-display text-xl font-medium text-[#0F172A]">
                                     {p.name}
                                 </h3>
+                                <p className="mt-1 text-sm font-medium text-[#0CA56F]">
+                                    ({p.scientific})
+                                </p>
                                 <p className="mt-2.5 text-base leading-relaxed text-[#334155]">
                                     {p.description}
                                 </p>
