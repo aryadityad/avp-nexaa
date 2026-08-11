@@ -145,27 +145,19 @@ export const Footer = () => {
                     <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-white/45">
                         Connect With Us
                     </h4>
-                    <div className="mt-4 flex gap-4">
+                    <div className="mt-4 flex flex-col gap-3">
                         {SOCIAL_TILES.map((s) => (
                             <a
                                 key={s.name}
                                 href={s.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group text-center"
+                                className="group w-fit text-base font-semibold transition-all duration-300"
+                                style={{ color: s.color, textShadow: `0 0 14px ${s.color}55` }}
                                 data-testid={`social-tile-${s.name.toLowerCase()}`}
                                 aria-label={`AVP Nexaa on ${s.name}, opens in a new tab`}
                             >
-                                <span className="flex h-16 w-16 items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                                    <s.Icon
-                                        size={36}
-                                        color={s.color}
-                                        style={{ filter: `drop-shadow(0 0 12px ${s.color}99)` }}
-                                    />
-                                </span>
-                                <p className="mx-auto mt-2 text-[10px] leading-tight text-white/50 transition-colors duration-300 group-hover:text-[#D4AF37]">
-                                    {s.name}
-                                </p>
+                                {s.name}
                             </a>
                         ))}
                     </div>
