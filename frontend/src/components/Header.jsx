@@ -25,7 +25,7 @@ export const Header = () => {
     return (
         <header
             data-testid="site-header"
-            className="fixed inset-x-0 top-0 z-50 border-b border-[#0F172A]/10 bg-white/90 py-2 shadow-[0_8px_30px_rgb(0,0,0,0.05)] backdrop-blur-xl backdrop-saturate-150"
+            className="fixed inset-x-0 top-0 z-50 border-b border-[#0F172A]/10 bg-white/90 py-2.5 shadow-[0_8px_30px_rgb(0,0,0,0.05)] backdrop-blur-xl backdrop-saturate-150"
         >
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-10">
                 <button
@@ -37,7 +37,7 @@ export const Header = () => {
                     <img
                         src="/assets/logo-full.png"
                         alt="AVP Nexaa — Collaborate. Connect. Grow."
-                        className="h-20 w-auto object-contain md:h-24"
+                        className="h-12 w-auto object-contain md:h-14"
                     />
                 </button>
 
