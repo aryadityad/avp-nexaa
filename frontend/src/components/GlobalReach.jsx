@@ -20,12 +20,12 @@ const PILLARS = [
     {
         icon: Sprout,
         title: "Agricultural Heartland",
-        text: "India is among the world's largest producers of spices and herbs — a sourcing base few origins can match.",
+        text: "India is among the world's largest producers of spices and herbs, a sourcing base few origins can match.",
     },
     {
         icon: ShieldCheck,
         title: "Assured Quality",
-        text: "Certified farms, modern dehydration units and lab-tested batches ensure consistency container after container.",
+        text: "Certified farms, modern dehydration units and lab tested batches ensure consistency container after container.",
     },
     {
         icon: Globe2,
@@ -72,7 +72,7 @@ export const GlobalReach = () => {
 
             <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10">
                 <Reveal>
-                    <Chapter number="05" label="Global Reach — Why India" light />
+                    <Chapter number="05" label="Global Reach & Why India" light />
                     <h2 className="font-display max-w-3xl text-4xl font-medium leading-tight tracking-tight text-white sm:text-5xl">
                         <SplitChars text="From Indian fields to" />{" "}
                         <SplitChars text="global ports." className="text-[#D4AF37]" />

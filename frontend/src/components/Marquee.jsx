@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 const ITEMS = [
     "Organic Dehydrated Products",
     "Premium Spices & Herbs",
-    "Export-Grade Quality",
+    "Export Grade Quality",
     "Direct From Certified Farms",
     "Collaborate. Connect. Grow.",
 ];

@@ -53,7 +53,7 @@ export const Hero = () => {
                 >
                     <img
                         src={HERO_IMG}
-                        alt="Aromatic Indian spices — dried chillies, turmeric, cardamom and curry leaves on dark slate"
+                        alt="Golden wheat field at sunset with sun rays over the harvest"
                         className="h-[120%] w-full object-cover"
                         fetchpriority="high"
                     />
@@ -78,7 +78,7 @@ export const Hero = () => {
                     className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/25 bg-[#0B131F]/45 px-5 py-2.5 text-xs font-semibold uppercase leading-relaxed tracking-[0.18em] text-[#E9C96A] backdrop-blur-md md:tracking-[0.24em]"
                 >
                     <SplitChars
-                        text="Premium Indian Exporter — Dehydrated Agri Products, Spices & Herbs"
+                        text="Premium Indian Exporter, Dehydrated Agri Products, Spices & Herbs"
                         stagger={0.012}
                         delay={0.2}
                     />
@@ -100,7 +100,7 @@ export const Hero = () => {
                     className="mt-6 max-w-xl text-base leading-relaxed text-white/90 md:text-lg"
                 >
                     AVP Nexaa partners with certified Indian farms to deliver organic,
-                    export-grade dehydrated products, spices and herbs to buyers across
+                    export grade dehydrated products, spices and herbs to buyers across
                     the world.
                 </motion.p>
 

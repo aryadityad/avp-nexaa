@@ -40,12 +40,12 @@ export const About = () => (
                         <p className="mt-7 max-w-xl text-base leading-relaxed text-[#334155] md:text-lg">
                             AVP Nexaa is a trusted Indian B2B exporter of premium organic
                             dehydrated agricultural products, herbs and spices. We source
-                            directly from certified farms and processing units — ensuring
+                            directly from certified farms and processing units, ensuring
                             every consignment meets the exacting standards of
                             international food trade.
                         </p>
                         <p className="mt-5 max-w-xl text-base leading-relaxed text-[#334155] md:text-lg">
-                            From field selection to export-grade packaging, our team
+                            From field selection to export grade packaging, our team
                             manages the entire supply chain with transparency, consistency
                             and care.
                         </p>

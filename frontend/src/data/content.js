@@ -27,9 +27,9 @@ export const PRODUCT_CATEGORIES = [
                 slug: "moringa-powder",
                 scientific: "Moringa oleifera",
                 description:
-                    "Nutrient-dense superfood powder, export-grade and hygienically processed from premium moringa leaves.",
+                    "Nutrient dense superfood powder, export grade and hygienically processed from premium moringa leaves.",
                 longDescription:
-                    "Our moringa powder is produced from hand-selected moringa leaves, shade-dried and milled under strict hygiene protocols to retain colour, aroma and nutritional density. A versatile superfood ingredient for nutraceutical, food and wellness applications worldwide.",
+                    "Our moringa powder is produced from hand selected moringa leaves, shade dried and milled under strict hygiene protocols to retain colour, aroma and nutritional density. A versatile superfood ingredient for nutraceutical, food and wellness applications worldwide.",
                 image: "https://images.unsplash.com/photo-1781377012601-93162be3a433?auto=format&fit=crop&w=900&q=80",
                 alt: "Vibrant green moringa powder in a wooden bowl",
             },
@@ -38,7 +38,7 @@ export const PRODUCT_CATEGORIES = [
                 slug: "turmeric-powder",
                 scientific: "Curcuma longa",
                 description:
-                    "High-curcumin turmeric with vibrant colour, sourced from certified Indian farms and milled to order.",
+                    "High curcumin turmeric with vibrant colour, sourced from certified Indian farms and milled to order.",
                 longDescription:
                     "Sourced from certified farms across India's premier turmeric belts, our turmeric powder offers high curcumin content and a deep, vibrant colour. Every batch is cleaned, dried and milled to order for maximum freshness in food, beverage and supplement formulations.",
                 image: "https://images.unsplash.com/photo-1594813593996-7f0d9868ce8e?auto=format&fit=crop&w=900&q=80",
@@ -49,9 +49,9 @@ export const PRODUCT_CATEGORIES = [
                 slug: "amla-powder",
                 scientific: "Phyllanthus emblica",
                 description:
-                    "Naturally rich in Vitamin C — sun-dried and gently processed to preserve nutrition and potency.",
+                    "Naturally rich in Vitamin C, sun dried and gently processed to preserve nutrition and potency.",
                 longDescription:
-                    "Made from carefully graded Indian gooseberries, our amla powder is sun-dried and gently processed to preserve its naturally high Vitamin C content and potency. Ideal for health foods, ayurvedic formulations and personal-care applications.",
+                    "Made from carefully graded Indian gooseberries, our amla powder is sun dried and gently processed to preserve its naturally high Vitamin C content and potency. Ideal for health foods, ayurvedic formulations and personal care applications.",
                 image: "https://images.unsplash.com/photo-1594813592990-2449cd47da8b?auto=format&fit=crop&w=900&q=80",
                 alt: "Fine amla powder in a clear glass jar",
             },
@@ -60,9 +60,9 @@ export const PRODUCT_CATEGORIES = [
                 slug: "chilli-powder",
                 scientific: "Capsicum annuum",
                 description:
-                    "Consistent heat and colour, processed to international food-safety standards for global buyers.",
+                    "Consistent heat and colour, processed to international food safety standards for global buyers.",
                 longDescription:
-                    "Ground from stemless, sun-dried red chillies, our chilli powder delivers consistent heat and brilliant colour batch after batch. Processed and packed to international food-safety standards for retail, food-service and industrial buyers.",
+                    "Ground from stemless, sun dried red chillies, our chilli powder delivers consistent heat and brilliant colour batch after batch. Processed and packed to international food safety standards for retail, food service and industrial buyers.",
                 image: "/assets/products/chilli-powder.jpg",
                 alt: "Freshly ground red chilli powder",
             },

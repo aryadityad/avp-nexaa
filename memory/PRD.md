@@ -52,6 +52,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-04 (revision 6): Transparent-background final logo now used everywhere (header blends with bar, footer white chip, favicon, ticker chips, OG card). Hero bg replaced with client hi-res wheat sunset (344KB optimized); OG card regenerated to match. Products H2 → "Perfect for Export"; scientific names added to all 4 products (cards + product pages). Translation reset fix: googtrans=/en/en (user re-selected English) now clears cookie + reloads once so no translated fragments linger — verified via cookie simulation.
 
+- 2026-08-11 (revision 7): Footer "Scan & Connect" QR strip replaced with branded social tiles (Instagram/WhatsApp/Facebook brand icons in brand colors, linked). New dedicated /products page listing all products with full spec tables (alternating rows, scientific names, quote/WhatsApp CTAs); nav Products + dropdown + footer links now route to it; ProductPage breadcrumb links to /products. Sitewide hyphen sweep — every visible hyphen/em-dash removed from copy (kept only in "Pimpri-Chinchwad" official city name). Fixed stray syntax error in content.js.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)

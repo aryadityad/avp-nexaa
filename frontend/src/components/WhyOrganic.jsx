@@ -4,13 +4,13 @@ import { Chapter, Reveal, SplitChars } from "./Reveal";
 const BENEFITS = [
     {
         icon: Leaf,
-        title: "Chemical-Free Cultivation",
-        text: "Grown without synthetic pesticides or fertilisers — cleaner raw material and cleaner labels for your buyers.",
+        title: "Chemical Free Cultivation",
+        text: "Grown without synthetic pesticides or fertilisers, cleaner raw material and cleaner labels for your buyers.",
     },
     {
         icon: FlaskConical,
         title: "Preserved Nutrition",
-        text: "Gentle dehydration locks in colour, aroma and nutrients that conventional high-heat processing strips away.",
+        text: "Gentle dehydration locks in colour, aroma and nutrients that conventional high heat processing strips away.",
     },
     {
         icon: Recycle,
@@ -20,7 +20,7 @@ const BENEFITS = [
     {
         icon: TrendingUp,
         title: "Rising Global Demand",
-        text: "Organic categories grow year on year across the US, EU and Gulf — a premium shelf position for your brand.",
+        text: "Organic categories grow year on year across the US, EU and Gulf, a premium shelf position for your brand.",
     },
 ];
 

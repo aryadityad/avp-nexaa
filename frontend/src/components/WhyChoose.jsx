@@ -19,8 +19,8 @@ const REASONS = [
         icon: Award,
         title: "Premium Quality",
         bullets: [
-            "Batch-tested dehydrated products & spices",
-            "Export-grade quality on every consignment",
+            "Batch tested dehydrated products & spices",
+            "Export grade quality on every consignment",
         ],
     },
     {
@@ -36,7 +36,7 @@ const REASONS = [
         title: "Strict Quality Control",
         bullets: [
             "Rigorous QC at every stage",
-            "Export-grade packaging for long-haul transit",
+            "Export grade packaging for long haul transit",
         ],
     },
     {
@@ -51,13 +51,13 @@ const REASONS = [
         icon: Package,
         title: "Custom Packaging",
         bullets: [
-            "Private-label formats available",
+            "Private label formats available",
             "Tailored to your market requirements",
         ],
     },
     {
         icon: Ship,
-        title: "On-Time Global Delivery",
+        title: "On Time Global Delivery",
         bullets: [
             "On-time dispatch to global ports",
             "Complete export documentation support",
@@ -83,8 +83,8 @@ const FEATURES = [
     },
     {
         icon: HeartHandshake,
-        title: "Long-Term Partnership Approach",
-        text: "We believe in creating lasting relationships based on trust, integrity, and mutual success rather than one-time transactions.",
+        title: "Long Term Partnership Approach",
+        text: "We believe in creating lasting relationships based on trust, integrity, and mutual success rather than one time transactions.",
     },
 ];
 
@@ -109,7 +109,7 @@ export const WhyChoose = () => (
                         <SplitChars text="rely on." className="text-[#166534]" />
                     </h2>
                     <p className="max-w-md text-base leading-relaxed text-[#334155]">
-                        Six commitments that define every consignment we ship — from the
+                        Six commitments that define every consignment we ship, from the
                         first sample to the final container.
                     </p>
                 </div>

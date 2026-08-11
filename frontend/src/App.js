@@ -16,6 +16,7 @@ import { Footer } from "./components/Footer";
 import { WhatsAppFloat } from "./components/WhatsAppFloat";
 import { CustomCursor } from "./components/CustomCursor";
 import { ProductPage } from "./components/ProductPage";
+import { ProductsPage } from "./components/ProductsPage";
 import { scrollToId } from "./data/content";
 
 const Home = () => (
@@ -68,6 +69,7 @@ function Shell() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/products" element={<ProductsPage />} />
                 <Route path="/products/:slug" element={<ProductPage />} />
             </Routes>
             <Footer />

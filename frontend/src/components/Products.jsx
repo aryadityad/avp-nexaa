@@ -21,8 +21,8 @@ export const Products = () => (
                         <SplitChars text="Perfect for Export" />
                     </h2>
                     <p className="max-w-md text-base leading-relaxed text-[#334155]">
-                        Our flagship range of organic powders — processed under strict
-                        hygiene protocols and packed to international food-safety
+                        Our flagship range of organic powders, processed under strict
+                        hygiene protocols and packed to international food safety
                         standards.
                     </p>
                 </div>

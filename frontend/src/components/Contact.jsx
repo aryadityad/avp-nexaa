@@ -37,10 +37,10 @@ export const Contact = () => {
             form.message,
         ].join("\n");
         const href = `mailto:${CONTACT.email}?subject=${encodeURIComponent(
-            `Export Enquiry — ${form.name}${form.company ? ` (${form.company})` : ""}`,
+            `Export Enquiry: ${form.name}${form.company ? ` (${form.company})` : ""}`,
         )}&body=${encodeURIComponent(body)}`;
         window.location.href = href;
-        toast.success("Your enquiry is ready in your email client — just hit send.", {
+        toast.success("Your enquiry is ready in your email client, just hit send.", {
             description: "We respond to all B2B enquiries within 24 hours.",
         });
     };
@@ -62,7 +62,7 @@ export const Contact = () => {
                             </h2>
                             <p className="mt-6 max-w-md text-base leading-relaxed text-white/80">
                                 Share your product requirements, target volumes and
-                                destination market — our export desk will respond with
+                                destination market, our export desk will respond with
                                 specifications and pricing within 24 hours.
                             </p>
                         </Reveal>
@@ -100,7 +100,7 @@ export const Contact = () => {
                         <Reveal delay={0.2}>
                             <div className="mt-10 overflow-hidden rounded-md border border-white/10">
                                 <iframe
-                                    title="AVP Nexaa office location — Chinchwad, Pune"
+                                    title="AVP Nexaa office location, Chinchwad, Pune"
                                     src={CONTACT.mapEmbed}
                                     className="h-56 w-full grayscale-[35%]"
                                     loading="lazy"

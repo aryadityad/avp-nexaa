@@ -11,6 +11,10 @@ export const Header = () => {
 
     const go = (id) => {
         setOpen(false);
+        if (id === "products") {
+            navigate("/products");
+            return;
+        }
         if (document.getElementById(id)) {
             scrollToId(id);
         } else {

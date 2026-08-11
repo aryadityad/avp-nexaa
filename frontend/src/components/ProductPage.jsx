@@ -48,7 +48,13 @@ export const ProductPage = () => {
                         Home
                     </Link>
                     <span>/</span>
-                    <span>{category ? category.name : "Products"}</span>
+                    <Link
+                        to="/products"
+                        data-testid="breadcrumb-products"
+                        className="transition-colors hover:text-[#0CA56F]"
+                    >
+                        {category ? category.name : "Products"}
+                    </Link>
                     <span>/</span>
                     <span className="text-[#166534]">{product.name}</span>
                 </nav>
