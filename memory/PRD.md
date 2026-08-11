@@ -64,6 +64,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-11 (blue logo): Classic blue horizontal logo (mark + AVP nexaa, no tagline) restored everywhere — white bg keyed to transparency, upscaled 3x for crispness; header, footer chip, favicon, ticker chips, and regenerated OG share card all updated.
 
+- 2026-08-11 (QR page): Logo hover QR popup removed entirely; new /connect page shows all 3 QR codes as large tappable cards (brand-colored labels); footer Quick Links gained "Scan & Connect" routing to it (verified navigation).
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)

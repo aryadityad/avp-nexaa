@@ -17,6 +17,7 @@ import { WhatsAppFloat } from "./components/WhatsAppFloat";
 import { CustomCursor } from "./components/CustomCursor";
 import { ProductPage } from "./components/ProductPage";
 import { ProductsPage } from "./components/ProductsPage";
+import { ConnectPage } from "./components/ConnectPage";
 import { scrollToId } from "./data/content";
 
 const Home = () => (
@@ -71,6 +72,7 @@ function Shell() {
                 <Route path="/" element={<Home />} />
                 <Route path="/products" element={<ProductsPage />} />
                 <Route path="/products/:slug" element={<ProductPage />} />
+                <Route path="/connect" element={<ConnectPage />} />
             </Routes>
             <Footer />
             <WhatsAppFloat />

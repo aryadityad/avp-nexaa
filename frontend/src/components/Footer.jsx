@@ -24,20 +24,6 @@ const SOCIAL_TILES = [
     },
 ];
 
-const FOOTER_QRS = [
-    {
-        src: "/assets/qr-instagram.png",
-        label: "Instagram",
-        href: "https://www.instagram.com/avpnexaa",
-    },
-    { src: "/assets/qr-whatsapp.png", label: "WhatsApp", href: CONTACT.whatsapp },
-    {
-        src: "/assets/qr-facebook.png",
-        label: "Facebook",
-        href: "https://www.facebook.com/profile.php?id=61591269235999",
-    },
-];
-
 export const Footer = () => {
     const navigate = useNavigate();
     const go = (id) => {
@@ -53,50 +39,15 @@ export const Footer = () => {
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-10">
             <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
                 <div>
-                    <div className="group/logo relative inline-block">
-                        <span
-                            className="inline-flex cursor-pointer items-center justify-center rounded-md bg-white p-3 ring-1 ring-black/5"
-                            data-testid="footer-logo"
-                        >
+                    <div>
+                        <span className="inline-flex items-center justify-center rounded-md bg-white p-3 ring-1 ring-black/5">
                             <img
                                 src="/assets/logo-full.png"
-                                alt="AVP Nexaa — Collaborate. Connect. Grow."
+                                alt="AVP Nexaa logo"
                                 className="h-20 w-auto object-contain"
                             />
                         </span>
-                        <div
-                            data-testid="logo-qr-popup"
-                            className="pointer-events-none absolute bottom-full left-0 z-50 mb-4 translate-y-2 rounded-md border border-white/10 bg-[#0B131F] p-5 opacity-0 shadow-2xl transition-all duration-300 group-hover/logo:pointer-events-auto group-hover/logo:translate-y-0 group-hover/logo:opacity-100"
-                        >
-                            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/50">
-                                Scan to connect
-                            </p>
-                            <div className="flex gap-4">
-                                {FOOTER_QRS.map((q) => (
-                                    <a
-                                        key={q.label}
-                                        href={q.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="group/qr text-center"
-                                        data-testid={`logo-qr-${q.label.toLowerCase()}`}
-                                        aria-label={`${q.label} QR code, opens in a new tab`}
-                                    >
-                                        <img
-                                            src={q.src}
-                                            alt={`${q.label} QR code`}
-                                            loading="lazy"
-                                            className="h-32 w-32 rounded-md bg-white p-1.5 transition-transform duration-300 group-hover/qr:scale-105"
-                                        />
-                                        <p className="mt-2 text-[10px] text-white/50">{q.label}</p>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
                     </div>
-                    <p className="mt-3 text-[10px] uppercase tracking-[0.14em] text-white/40">
-                        Hover the logo for QR codes
-                    </p>
                     <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/55">
                         Premium Indian B2B exporter of organic dehydrated agricultural
                         products, herbs and spices.
@@ -119,6 +70,15 @@ export const Footer = () => {
                                 </button>
                             </li>
                         ))}
+                        <li>
+                            <button
+                                onClick={() => navigate("/connect")}
+                                data-testid="footer-link-connect"
+                                className="text-sm text-white/65 transition-colors duration-200 hover:text-[#D4AF37]"
+                            >
+                                Scan &amp; Connect
+                            </button>
+                        </li>
                     </ul>
                 </nav>
 
