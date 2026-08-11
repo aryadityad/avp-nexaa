@@ -56,6 +56,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-11 (final logo v2): Horizontal transparent logo (mark + wordmark + tagline) now live in header, footer, favicon, ticker chips and OG share card; mark re-cropped cleanly from the horizontal lockup.
 
+- 2026-08-11 (footer polish): Footer social circles enlarged for legibility; footer logo now reveals a hover popup ("Scan to connect") with the three large QR codes (Instagram/WhatsApp/Facebook, each clickable), hint line under logo. Verified popup appears on hover via live test.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)
