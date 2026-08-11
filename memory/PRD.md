@@ -66,6 +66,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-11 (QR page): Logo hover QR popup removed entirely; new /connect page shows all 3 QR codes as large tappable cards (brand-colored labels); footer Quick Links gained "Scan & Connect" routing to it (verified navigation).
 
+- 2026-08-11 (favicon): Real favicon.ico generated from the blue bird mark (multi-size 16-64px) alongside the existing logo-mark.png link — Chrome tab now shows the current logo.
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)
