@@ -58,6 +58,8 @@ Build a premium, corporate B2B export website for AVP Nexaa, an Indian exporter 
 
 - 2026-08-11 (footer polish): Footer social circles enlarged for legibility; footer logo now reveals a hover popup ("Scan to connect") with the three large QR codes (Instagram/WhatsApp/Facebook, each clickable), hint line under logo. Verified popup appears on hover via live test.
 
+- 2026-08-11 (socials restyle): Removed the small social circles under footer intro; Connect With Us tiles now render as bare glowing brand glyphs (drop-shadow glow in brand colors, no white boxes).
+
 ## Backlog
 - P0: Wire enquiry form to email service (Resend) + persist enquiries in MongoDB
 - P0: Fill product spec tables with real data (moisture %, mesh size, packaging, MOQ, shelf life)
