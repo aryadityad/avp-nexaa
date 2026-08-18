@@ -58,7 +58,7 @@ export const Contact = () => {
                             <Chapter number="06" label="Contact & Enquiry" light />
                             <h2 className="font-display text-4xl font-medium leading-tight tracking-tight text-white sm:text-5xl">
                                 <SplitChars text="Let's talk" />{" "}
-                                <SplitChars text="exports." className="text-[#D4AF37]" />
+                                <SplitChars text="exports" className="text-[#D4AF37]" />
                             </h2>
                             <p className="mt-6 max-w-md text-base leading-relaxed text-white/80">
                                 Share your product requirements, target volumes and

@@ -14,7 +14,7 @@ export const Certifications = () => (
                 <div className="flex flex-wrap items-end justify-between gap-6">
                     <h2 className="font-display max-w-xl text-4xl font-medium leading-tight tracking-tight text-[#0F172A] sm:text-5xl">
                         <SplitChars text="Compliance you can" />{" "}
-                        <SplitChars text="verify." className="text-[#166534]" />
+                        <SplitChars text="verify" className="text-[#166534]" />
                     </h2>
                     <p className="max-w-md text-base leading-relaxed text-[#334155]">
                         Registration certificates and compliance documents are shared

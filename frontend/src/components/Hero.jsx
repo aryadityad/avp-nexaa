@@ -89,7 +89,7 @@ export const Hero = () => {
                         Connecting Local Harvests
                     </MaskedLine>
                     <MaskedLine delay={0.4} reduce={reduce}>
-                        to <span className="text-[#D4AF37]">Global Markets</span>
+                        to <span className="text-[#D4AF37]">Global Market</span>
                     </MaskedLine>
                 </h1>
 

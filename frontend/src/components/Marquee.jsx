@@ -15,12 +15,14 @@ const Row = () => (
                 <span className="font-display px-8 text-lg tracking-wide text-white/90 md:text-xl">
                     {item}
                 </span>
-                <img
-                    src="/assets/logo-mark.png"
-                    alt=""
-                    loading="lazy"
-                    className="h-7 w-7 rounded-full bg-white object-cover p-0.5"
-                />
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white p-1 shadow-sm">
+                    <img
+                        src="/assets/logo-mark.png"
+                        alt=""
+                        loading="lazy"
+                        className="h-full w-full object-contain"
+                    />
+                </span>
             </span>
         ))}
     </div>

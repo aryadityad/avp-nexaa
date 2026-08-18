@@ -2,7 +2,7 @@ import { Eye, Target } from "lucide-react";
 import { Chapter, Reveal, SplitChars } from "./Reveal";
 import { FloatingLeaves } from "./FloatingLeaves";
 
-const ABOUT_IMG = "/assets/about-soil.jpg";
+const ABOUT_IMG = "/assets/turmeric-field.png";
 
 const cards = [
     {
@@ -33,7 +33,7 @@ export const About = () => (
                         <h2 className="font-display text-5xl font-medium leading-tight tracking-tight text-[#0F172A] sm:text-6xl">
                             <SplitChars text="Rooted in Indian soil," />
                             <br />
-                            <SplitChars text="trusted worldwide." className="text-[#166534]" />
+                            <SplitChars text="trusted worldwide" className="text-[#166534]" />
                         </h2>
                     </Reveal>
                     <Reveal delay={0.1}>
@@ -58,8 +58,8 @@ export const About = () => (
                         <div className="relative overflow-hidden rounded-md shadow-[0_20px_50px_rgb(0,0,0,0.12)]">
                             <img
                                 src={ABOUT_IMG}
-                                alt="Young green seedlings growing in rich dark Indian soil"
-                                className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
+                                alt="Lush green organic crop fields cultivated across Indian agricultural soil"
+                                className="w-full h-auto object-contain transition-transform duration-700 hover:scale-105"
                                 loading="lazy"
                             />
                         </div>

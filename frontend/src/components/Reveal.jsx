@@ -52,12 +52,12 @@ export const SplitChars = ({ text, className = "", delay = 0, stagger = 0.02 }) 
     );
 };
 
-export const Chapter = ({ label, light = false }) => (
+export const Chapter = ({ label, light = false, className = "" }) => (
     <div className="mb-4 flex items-center gap-4">
         <span
-            className={`text-xs font-semibold uppercase tracking-[0.22em] ${
+            className={`text-sm sm:text-base font-bold uppercase tracking-[0.22em] ${
                 light ? "text-[#D4AF37]" : "text-[#166534]"
-            }`}
+            } ${className}`}
         >
             {label}
         </span>

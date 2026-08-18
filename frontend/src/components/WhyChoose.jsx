@@ -106,7 +106,7 @@ export const WhyChoose = () => (
                 <div className="flex flex-wrap items-end justify-between gap-6">
                     <h2 className="font-display max-w-2xl text-5xl font-medium leading-tight tracking-tight text-[#0F172A] sm:text-6xl">
                         <SplitChars text="The partner serious buyers" />{" "}
-                        <SplitChars text="rely on." className="text-[#166534]" />
+                        <SplitChars text="rely on" className="text-[#166534]" />
                     </h2>
                     <p className="max-w-md text-base leading-relaxed text-[#334155]">
                         Six commitments that define every consignment we ship, from the

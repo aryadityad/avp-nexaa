@@ -66,7 +66,10 @@ export const Header = () => {
                                         {PRODUCT_CATEGORIES.map((c) => (
                                             <button
                                                 key={c.slug}
-                                                onClick={() => go("products")}
+                                                onClick={() => {
+                                                    setOpen(false);
+                                                    navigate(`/products#${c.slug}`);
+                                                }}
                                                 data-testid={`nav-category-${c.slug}`}
                                                 className="flex w-full items-center justify-between rounded-sm px-4 py-3 text-left transition-colors hover:bg-[#0CA56F]/5"
                                             >
@@ -138,15 +141,18 @@ export const Header = () => {
                                     </button>
                                     {l.id === "products" &&
                                         PRODUCT_CATEGORIES.map((c) => (
-                                            <button
-                                                key={c.slug}
-                                                onClick={() => go("products")}
-                                                data-testid={`mobile-nav-category-${c.slug}`}
-                                                className="w-full rounded-md py-2 pl-8 pr-3 text-left text-[13px] text-[#334155] transition-colors hover:text-[#0CA56F]"
-                                            >
-                                                {c.name}
-                                            </button>
-                                        ))}
+                                             <button
+                                                 key={c.slug}
+                                                 onClick={() => {
+                                                     setOpen(false);
+                                                     navigate(`/products#${c.slug}`);
+                                                 }}
+                                                 data-testid={`mobile-nav-category-${c.slug}`}
+                                                 className="w-full rounded-md py-2 pl-8 pr-3 text-left text-[13px] text-[#334155] transition-colors hover:text-[#0CA56F]"
+                                             >
+                                                 {c.name}
+                                             </button>
+                                         ))}
                                 </div>
                             ))}
                             <div className="flex items-center justify-center px-3 py-3">

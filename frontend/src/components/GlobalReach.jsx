@@ -48,7 +48,7 @@ export const GlobalReach = () => {
             id="global-reach"
             ref={ref}
             data-testid="global-reach-section"
-            className="relative overflow-hidden py-28 md:py-36"
+            className="relative overflow-hidden pt-20 pb-24 md:pt-24 md:pb-28"
         >
             <motion.div className="absolute inset-0" style={reduce ? {} : { y }}>
                 <img
@@ -75,7 +75,7 @@ export const GlobalReach = () => {
                     <Chapter number="05" label="Global Reach & Why India" light />
                     <h2 className="font-display max-w-3xl text-4xl font-medium leading-tight tracking-tight text-white sm:text-5xl">
                         <SplitChars text="From Indian fields to" />{" "}
-                        <SplitChars text="global ports." className="text-[#D4AF37]" />
+                        <SplitChars text="global ports" className="text-[#D4AF37]" />
                     </h2>
                 </Reveal>
 
